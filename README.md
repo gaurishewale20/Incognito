@@ -1,4 +1,4 @@
-# Inheritance Project 2k20
+# Incognito-Inheritance Project 2k20
 ## Gauri V Shewale
 ## Piyusha S Bharambe
 ## Vaishnavi Bhadrashette
