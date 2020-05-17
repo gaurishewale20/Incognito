@@ -1,0 +1,27 @@
+nav {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.navitem {
+    color: #111;
+}
+
+.containerofimage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+.containeroffooter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    background-color: rgba(25, 36, 36, 0.5);
+    color: #ffe;
+}
