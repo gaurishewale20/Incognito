@@ -1,38 +1,47 @@
 import axios from 'axios';
 
-const url = 'https://covid19.mathdro.id/api';
+const url = 'https://api.covid19india.org/data.json';
 
-export const fetchData = async(country) => {
-    let changeableUrl = url;
+// export const fetchData = async() => {
+//     try {
+//         const { data: { statewise: { confirmed, recovered, active, deaths } } } = await axios.get(url);
+//         return {
+//             statewise: { confirmed, recovered, active, deaths }
+//         };
+//     } catch (error) {
+//         return error;
+//     }
+// };
 
-    if (country) {
-        changeableUrl = `${url}/countries/${country}`;
-    }
 
+
+export const fetchData = async() => {
     try {
-        const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(changeableUrl);
+        const { data } = await axios.get(url);
 
-        return { confirmed, recovered, deaths, lastUpdate };
+        return data.statewise.map(({ confirmed, recovered, active, deaths }) => ({ confirmed: confirmed, recovered: recovered, active: active, deaths: deaths }));
     } catch (error) {
         return error;
     }
 };
 
-export const fetchDailyData = async() => {
+export const fetchTotalData = async() => {
     try {
-        const { data } = await axios.get(`${url}/daily`);
+        const { data } = await axios.get(url);
 
-        return data.map(({ confirmed, deaths, reportDate: date }) => ({ confirmed: confirmed.total, deaths: deaths.total, date }));
+        return data.statewise.map(({ confirmed, recovered, active, deaths, state }) => ({ confirmed: confirmed, recovered: recovered, active: active, deaths: deaths, state: state }));
     } catch (error) {
         return error;
     }
 };
+
+
 
 export const fetchCountries = async() => {
     try {
-        const { data: { countries } } = await axios.get(`${url}/countries`);
+        const { data } = await axios.get(url);
 
-        return countries.map((country) => country.name);
+        return data.statewise.map((info) => info.state);
     } catch (error) {
         return error;
     }

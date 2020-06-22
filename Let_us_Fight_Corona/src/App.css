@@ -1,0 +1,95 @@
+body {
+    background-color: #f0ffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: right;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    flex-direction: top;
+    text-align: center;
+}
+
+.cards {
+    float: right;
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        margin: 0 10%;
+    }
+    .country {
+        margin: 0 10%;
+    }
+    .image {
+        width: 100%;
+    }
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #9575CD;
+    color: floralwhite;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    margin-top: 5px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+    border: none;
+    top: 100%;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 12px;
+    right: 10%;
+    bottom: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: green;
+    color: white;
+    z-index: 1;
+}
+
+.scroll-to-top.icon {
+    margin-top: 10px;
+    animation: scrollTop 0.5s alternate ease;
+}
+
+nav {
+    width: "auto";
+    height: "auto";
+}
+
+@keyframes icon {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}

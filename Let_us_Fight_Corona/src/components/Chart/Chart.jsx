@@ -1,75 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { Line, Bar } from 'react-chartjs-2';
-
-import { fetchDailyData } from '../../api';
-
+import React from 'react';
+import { Bar } from 'react-chartjs-2';
 import styles from './Chart.module.css';
 
-const Chart = ( { data: { confirmed, recovered, deaths }, country } ) =>
+const Chart = ( { subset: { confirmed, recovered, active, deaths }, country } ) =>
 {
-    const [ dailyData, setDailyData ] = useState( {} );
 
-    useEffect( () =>
-    {
-        const fetchMyAPI = async () =>
-        {
-            const initialDailyData = await fetchDailyData();
-
-            setDailyData( initialDailyData );
-        };
-
-        fetchMyAPI();
-    }, [] );
 
     const barChart = (
         confirmed ? (
             <Bar
                 data={ {
-                    labels: [ 'Infected', 'Recovered', 'Deaths' ],
+                    labels: [ 'Confirmed', 'Recovered', 'Active', 'Deaths' ],
                     datasets: [
                         {
-                            label: 'People',
-                            backgroundColor: [ 'rgba(0, 0, 255, 0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)' ],
-                            data: [ confirmed.value, recovered.value, deaths.value ],
+                            label: 'Numbers',
+                            backgroundColor: [ 'rgba(30, 31, 38, 0.8)', 'rgba(40, 54, 85, 0.8)', 'rgba(77, 100, 141, 0.8)', 'rgba(208, 150, 131, 0.8)' ],
+                            data: [ confirmed, recovered, active, deaths ],
+                            borderWidth: 1,
+                            borderColor: '#777',
+                            hoverBorderWidth: 2,
+                            hoverBorderColor: '#333',
                         },
+
                     ],
+
                 } }
                 options={ {
-                    legend: { display: false },
-                    title: { display: true, text: `Current state in ${ country }` },
+                    legend: { display: false, align: 'center', labels: { fontColor: '#000' } },
+                    title: { display: true, text: `Current state in ${ country }`, fontSize: 15, fontColor: '#777' },
+                    tooltips: {
+                        enabled: true,
+                        intersect: true,
+                        cornerRadius: 9
+
+                    }
                 } }
             />
         ) : null
     );
 
-    const lineChart = (
-        dailyData[ 0 ] ? (
-            <Line
-                data={ {
-                    labels: dailyData.map( ( { date } ) => date ),
-                    datasets: [ {
-                        data: dailyData.map( ( data ) => data.confirmed ),
-                        label: 'Infected',
-                        borderColor: '#3333ff',
-                        fill: true,
-                    }, {
-                        data: dailyData.map( ( data ) => data.deaths ),
-                        label: 'Deaths',
-                        borderColor: 'red',
-                        backgroundColor: 'rgba(255, 0, 0, 0.5)',
-                        fill: true,
-                    },
-                    ],
-                } }
-            />
-        ) : null
-    );
+
 
     return (
         <div className={ styles.container }>
-            { country ? barChart : lineChart }
+            { barChart }
         </div>
     );
 };
 
-export default Chart;
+export default Chart; 

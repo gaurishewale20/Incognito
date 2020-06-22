@@ -1,0 +1,77 @@
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.card {
+    float: horizonal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    transition: .3s;
+    font-family: Arial;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.text {
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.block {
+    display: block;
+    border: #33cca6;
+    outline: 0;
+    padding: 14px;
+    color: white;
+    background-color: #33cca6;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.button:hover {
+    opacity: .5;
+}
+
+table,
+th,
+td {
+    border: none;
+    padding: 50px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    /* Other styles here */
+}
+
+.diet {
+    text-align: left;
+}
+
+.head {
+    text-align: center;
+}

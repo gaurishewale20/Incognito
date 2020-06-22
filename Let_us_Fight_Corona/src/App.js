@@ -1,46 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ResponsiveDrawer from './components/Navbar';
+import "./App.css";
+import { BrowserRouter } from 'react-router-dom';
 
-import { Cards, CountryPicker, Chart } from './components';
-import { fetchData } from './api/';
-import styles from './App.module.css';
-
-import image from './image/image.png';
-
-class App extends React.Component
+class App extends Component
 {
-  state = {
-    data: {},
-    country: '',
-  }
-
-  async componentDidMount ()
-  {
-    const data = await fetchData();
-
-    this.setState( { data } );
-  }
-
-  handleCountryChange = async ( country ) =>
-  {
-    const data = await fetchData( country );
-
-    this.setState( { data, country: country } );
-  }
 
   render ()
   {
-    const { data, country } = this.state;
-
     return (
-      <div className={ styles.container } >
 
-        <Cards data={ data } />
+      <BrowserRouter>
+        <div className="App">
+          <ResponsiveDrawer />
+        </div>
+      </BrowserRouter>
 
-        < CountryPicker handleCountryChange={ this.handleCountryChange } />
-
-        <Chart data={ data } country={ country } />
-
-      </div >
     );
   }
 }

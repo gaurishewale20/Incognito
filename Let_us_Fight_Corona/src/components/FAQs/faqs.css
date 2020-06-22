@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content__index {
+    display: block;
+    background-color: rgba(51, 50, 50, 0.986);
+    ;
+    width: 50%;
+    border: none;
+    color: rgb(207, 202, 202);
+}
+
+.content__index:hover {
+    outline: none;
+    background-color: rgb(73, 73, 73);
+}
+
+.content__index:focus {
+    outline: none;
+}
+
+.content__index.active {
+    border: none;
+    outline: none;
+    background-color: rgba(20, 19, 19, 0.986);
+}
+
+.sectiontitle {
+    font-family: monospace;
+    font-weight: 900;
+    color: rgb(158, 165, 158);
+}
+
+@media (max-width:500px) {
+    margin-right: 10px;
+}

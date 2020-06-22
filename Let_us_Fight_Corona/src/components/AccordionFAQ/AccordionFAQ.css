@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.accordion__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion {
+    background-color: #fff;
+    color: rgb(35, 211, 35);
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    box-shadow: 10px 5px 5px rgb(158, 155, 155);
+}
+
+.accordion:hover,
+.accordion .active {
+    background-color: rgb(17, 167, 55);
+    color: #fff;
+    outline: none;
+}
+
+.accordion:focus {
+    outline: none;
+}
+
+.accordion__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    ;
+}
+
+.accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.accordion__content {
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    box-shadow: 10px 5px 5px rgb(158, 155, 155);
+}
+
+.accordion__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 18px;
+}

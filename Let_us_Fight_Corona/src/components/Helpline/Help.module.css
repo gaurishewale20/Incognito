@@ -1,0 +1,5 @@
+  .staterow:nth-child(odd) {
+      background-color: green;
+      color: #fff;
+      font-family: Arial;
+  }
