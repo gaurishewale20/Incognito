@@ -1,7 +1,7 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from "react-router-dom";
-import NationChart from './NationChart';
+import NC_App from './NationChart_api';
 import StateChart from './StateChart';
 import StateTable from './StateTable';
 
@@ -19,7 +19,7 @@ function Dashboard ()
                     <hr />
                 </div>
             </div>
-            <NationChart /><p />
+            <NC_App /><p />
             <StateChart /><p />
             <StateTable />
         </div>
