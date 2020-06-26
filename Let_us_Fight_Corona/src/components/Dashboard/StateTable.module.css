@@ -1,5 +1,6 @@
 .statetablerow:nth-child(odd) {
-    background-color: #0d0d50;
+    background-color: #1f363d;
+    /*#0d0d50*/
     color: #fff;
     font-family: Arial;
 }

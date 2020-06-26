@@ -3,9 +3,12 @@ import { Bar } from 'react-chartjs-2';
 import styles from './Chart.module.css';
 
 const Chart = ( { subset: { confirmed, recovered, active, deaths }, country } ) =>
+
+
 {
-
-
+    if(!confirmed){
+        return 'Please select a State!'
+    }
     const barChart = (
         confirmed ? (
             <Bar

@@ -1,5 +1,7 @@
-  .staterow:nth-child(odd) {
-      background-color: green;
-      color: #fff;
-      font-family: Arial;
-  }
+.staterow:nth-child(odd) {
+    /* 1 background-color: #1e5c53 */
+    background-color: #37414a;
+    /* green; */
+    color: #fff;
+    font-family: Arial;
+}

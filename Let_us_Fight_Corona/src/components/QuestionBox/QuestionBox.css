@@ -21,8 +21,10 @@
 .answerBtn {
     position: relative;
     padding: 10px;
-    background-color: rgb(157, 108, 185);
-    display: inline-block;
+    /* 1 background-color:
+        #40798c;
+        */
+    background-color: #37414a;
     margin: 10px;
     outline: none;
     border: none;

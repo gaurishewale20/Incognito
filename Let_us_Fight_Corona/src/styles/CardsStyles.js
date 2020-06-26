@@ -42,7 +42,7 @@ export default {
         [sizes.down("sm")]: {
             fontSize: "1.6rem",
         },
-        color: "green",
+        color: "grey",
         fontfamily: "Open Sans",
     }
 };
