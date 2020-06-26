@@ -3,12 +3,10 @@ import React from 'react';
 function Footer ( props )
 {
     return (
-        <div className="footer">
-            <div className="row justify-content-center">
-                <div className="text-center">
-                    <h4>Stay Healthy. Stay Safe</h4>
-                    <p> © Team Incognito</p>
-                </div>
+        <div className="footer row justify-content-center">
+            <div className="text-center">
+                <h4>Stay Healthy. Stay Safe</h4>
+                <p> © Team Incognito</p>
             </div>
         </div>
     )

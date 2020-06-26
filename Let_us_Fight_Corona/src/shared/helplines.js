@@ -1,4 +1,5 @@
-export const HELPLINES = [{
+//Union Territories
+export const Helplines = [{
         id: 1,
         ut: "Andaman and Nicobar island",
         helpline: "03192-23102"

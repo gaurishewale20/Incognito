@@ -1,6 +1,4 @@
-import React, { useRef } from "react";
-import { Link } from "react-router-dom";
-import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import React from "react";
 import AccordionFAQ from '../AccordionFAQ/AccordionFAQ';
 import ScrollToTop from '../ScrollTotop';
 import "./faqs.css";
@@ -10,10 +8,6 @@ const FAQs = () =>
     return (
         <div className="container-fluid">
             <div className="row">
-                <Breadcrumb>
-                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem >FAQs</BreadcrumbItem>
-                </Breadcrumb>
                 <div className="col-12">
                     <h3>FAQs</h3>
                     <hr />
@@ -24,7 +18,7 @@ const FAQs = () =>
             <div className="faq__container">
                 <div className="first">
 
-                    <a href="#"><button className="content__index" >Corona Virus</button></a>
+                    <a href="/faqs"><button className="content__index" >Corona Virus</button></a>
                     <a href="#section2"><button className="content__index" >Covid-19</button></a>
                     <a href="#section3"><button className="content__index" >Symptoms</button></a>
                     <a href="#section4"><button className="content__index" >Spread</button></a>

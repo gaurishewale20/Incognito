@@ -1,4 +1,4 @@
-export const MUMBAIHELPLINES = [
+export const MumbaiHelpline = [
 
     {
         id: 1,
@@ -53,7 +53,7 @@ export const MUMBAIHELPLINES = [
         id: 9,
         ward: "G North",
         area: "Dharavi, Mahim, Dadar",
-        helplinenumber: 24397888 / 24212778
+        helplinenumber: "24397888 / 24212778"
     },
     {
         id: 10,

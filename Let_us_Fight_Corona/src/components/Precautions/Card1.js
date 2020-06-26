@@ -23,9 +23,9 @@ const Card1 = () =>
                     </div>
                 </div>
 
-                <button type="button" className="block" data-toggle="collapse" data-target="#demo">See here the correct
+                <button type="button" className="block" data-toggle="collapse" data-target="#demo1">See here the correct
             procedure to wash hands</button>
-                <div id="demo" className="collapse">
+                <div id="demo1" className="collapse">
                     <br />
                     <div><img src={ `${ Pic11 }` } width="500" height="400" alt="Procedure to wash hands properly" /></div>
                 </div>

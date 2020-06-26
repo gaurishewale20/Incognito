@@ -29,8 +29,8 @@ const Card5 = () =>
 
                     </div>
                 </div>
-                <button type="button" className="block" data-toggle="collapse" data-target="#demo">How to stay positive and healthy at home?</button>
-                <div id="demo" className="collapse">
+                <button type="button" className="block" data-toggle="collapse" data-target="#demo3">How to stay positive and healthy at home?</button>
+                <div id="demo3" className="collapse">
                     <ul className="nav nav-tabs" role="tablist">
                         <li className="nav-item">
                             <a className="nav-link active" data-toggle="tab" href="#s1">Mantra 1</a>

@@ -23,8 +23,8 @@ const Card3 = () =>
                         <p className="card-text">By wearing a face mask it covers your Nose, Mouth.Thus prevents virus from entering your body.</p>
                     </div>
                 </div>
-                <button type="button" className="block" data-toggle="collapse" data-target="#demo1">Follow this instruction to wear it correctly</button>
-                <div id="demo1" className="collapse">
+                <button type="button" className="block" data-toggle="collapse" data-target="#demo2">Follow this instruction to wear it correctly</button>
+                <div id="demo2" className="collapse">
                     <ul className="nav nav-tabs" role="tablist">
                         <li className="nav-item">
                             <a className="nav-link active" data-toggle="tab" href="#r1">No 1</a>

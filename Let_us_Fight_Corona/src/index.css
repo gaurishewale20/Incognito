@@ -9,12 +9,3 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-#root {
-    background-color: black;
-}
-
-html {
-    background-color: black;
-    min-height: 100vh;
-}

@@ -1,30 +1,38 @@
-import { withStyles } from "@material-ui/styles";
+//import { withStyles } from "@material-ui/styles";
 import React from "react";
-import styles from "../styles/CardsStyles";
-import "../styles/Home"
-import { Link } from "react-router-dom"
+//import styles from "../styles/CardsStyles";
+//import "../styles/Home"
+import { Link } from "react-router-dom";
+import "../styles/card-style.css";
 //This is for Home Component Card Layout
+
 
 function Cards ( { title, src, classes, content, link } )
 {
     return (
-        <div className={ classes.card } >
+        <div className="homecards col-md-6">
             <Link className="tags"
                 style={ {
                     color: "default",
                     textDecoration: "none"
                 } } to={ link }>
-                <h2 className={ classes.cardTitle }>{ title }</h2>
-                <img src={ src } alt={ title } className={ classes.cardImage } />
-                <br />
-                <h4 className={ classes.cardContent }>{ content }</h4>
+                <div className="card text-center" >
+                    <div className="container-fluid">
+                        <img src={ src } alt={ title } className="card-img-top" />
+                    </div>
+                    <div className="card-body text-dark">
+                        <h4 className="card-title">{ title }</h4>
+                        <p className="card-text text-secondary">{ content }</p>
+                    </div>
+                </div>
             </Link>
+            <p />
         </div>
 
     );
 }
 
-export default withStyles( styles )( Cards );
+export default Cards;
 /* Alternative Path
  <div>
             <Card>
@@ -38,4 +46,19 @@ export default withStyles( styles )( Cards );
                 </CardBody>
             </Card>
         </div>
-*/
+///
+////
+/////
+<div className={ classes.card } >
+            <Link className="tags"
+                style={ {
+                    color: "default",
+                    textDecoration: "none"
+                } } to={ link }>
+                <h2 className={ classes.cardTitle }>{ title }</h2>
+                <img src={ src } alt={ title } className={ classes.cardImage } />
+                <br />
+                <h4 className={ classes.cardContent }>{ content }</h4>
+            </Link>
+        </div>
+        */

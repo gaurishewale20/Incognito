@@ -1,7 +1,5 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import nasawp from '../../image/images/nasawp.jpg'
+import nasawp from '../../image/images/nasawp.jpg';
 
 
 function About () 
@@ -9,10 +7,7 @@ function About ()
     return (
         <div className="container-fluid">
             <div className="row">
-                <Breadcrumb>
-                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem >About Us</BreadcrumbItem>
-                </Breadcrumb>
+
                 <div className="col-12 text-left">
                     <h3>About Us</h3>
                     <hr />

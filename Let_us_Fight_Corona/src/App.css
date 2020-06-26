@@ -1,5 +1,20 @@
 body {
-    background-color: #f0ffff;
+    background-color: rgb(197, 47, 160);
+}
+
+.App {
+    box-sizing: inherit;
+}
+
+
+/* background-color: rgb(192, 191, 192);8*/
+
+.home {
+    border: 0;
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236));
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,10 +30,6 @@ body {
     text-align: center;
 }
 
-.cards {
-    float: right;
-}
-
 @media only screen and (max-width: 770px) {
     .container {
         margin: 0 10%;
@@ -31,21 +42,18 @@ body {
     }
 }
 
-.jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background: #9575CD;
-    color: floralwhite;
-}
-
 .navbar-dark {
     background-color: #512DA8;
 }
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: black;
+    color: white;
     margin-top: 5px 0px 0px 0px;
     padding: 20px 0px 20px 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
     border: none;
     top: 100%;
 }
@@ -55,12 +63,14 @@ body {
     padding: 0px auto;
 }
 
+
+/*
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height: 400px;
-}
+}*/
 
 .scroll-to-top {
     position: fixed;
@@ -70,19 +80,13 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: green;
-    color: white;
+    color: rgb(14, 13, 13);
     z-index: 1;
 }
 
 .scroll-to-top.icon {
     margin-top: 10px;
-    animation: scrollTop 0.5s alternate ease;
-}
-
-nav {
-    width: "auto";
-    height: "auto";
+    animation: scrollTop 2.5s alternate ease;
 }
 
 @keyframes icon {

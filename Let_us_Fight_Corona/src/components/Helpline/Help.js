@@ -1,132 +1,113 @@
-import React from 'react';
-import { Breadcrumb, BreadcrumbItem } from "reactstrap";
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import styles from "./Help.module.css";
+import { Table } from "reactstrap";
+import TableRow from './TableRow';
+import { HelplineNumbers } from '../../shared/helplinenumbers';
+import { Helplines } from '../../shared/helplines';
+import { MumbaiHelpline } from '../../shared/mumbaihelpline';
 
-function RenderHelpline ( { helplinenumber } )// States
+const Help = () =>
 {
-    return (
-        <tbody className={ styles.staterow }>
-            <tr>
-                <td>{ helplinenumber.id }</td>
-                <td><h5>{ helplinenumber.statename }</h5></td>
-                <td>{ helplinenumber.helplinenumber }</td>
-            </tr>
-        </tbody>
-    );
-}
-
-function RenderUThelp ( { helpline } ) // Union T
-{
-
-    return (
-        <tbody className={ styles.staterow }>
-            <tr >
-                <td>{ helpline.id }</td>
-                <td><h5>{ helpline.ut }</h5></td>
-                <td>{ helpline.helpline }</td>
-            </tr>
-        </tbody>
-    );
-}
-
-function RenderMumbaiHelp ( { mumbaihelpline } ) // Mumbai 
-{
-
-    return (
-        <tbody className={ styles.staterow }>
-            <tr >
-                <td>{ mumbaihelpline.id }</td>
-                <td><h5>{ mumbaihelpline.ward }</h5></td>
-                <td>{ mumbaihelpline.area }</td>
-                <td>{ mumbaihelpline.helplinenumber }</td>
-            </tr>
-        </tbody>
-    );
-}
-function Help ( props )
-{
-
-    const helplinenumbers = props.helplinenumbers.map( ( helplinenumber ) =>
+    const [ search, setSearch ] = useState( '' );
+    const filteredSearch = HelplineNumbers.filter( s =>
     {
-        return (
-            <RenderHelpline helplinenumber={ helplinenumber } />
-        );
-    } );
-
-
-    const helplines = props.helplines.map( ( helpline ) =>
-    {
-        return (
-            <RenderUThelp helpline={ helpline } />
-        );
-    } );
-
-    const mumbaihelplines = props.mumbaihelplines.map( ( mumbaihelpline ) =>
-    {
-        return (
-            <RenderMumbaiHelp mumbaihelpline={ mumbaihelpline } />
-        );
-    } );
-
-    return (
-        <div className="container-fluid bg-navy">
-            <div className="row">
-                <Breadcrumb>
-                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem >Help</BreadcrumbItem>
-                </Breadcrumb>
-
-            </div>
-            <div className="col-12">
-                <h2>HelpLine</h2>
-                <p />
-            </div>
-            <div className="container-fluid">
-                <table className="table ">
-                    <thead className="text-black-0 w-100">
-                        <tr>
-                            <th>Sr.no</th>
-                            <th>State</th>
-                            <th>Helpline-number</th>
-                        </tr>
-                    </thead>
-                    { helplinenumbers }
-                </table>
-            </div>
-            <p />
-            <div className="container-fluid">
-                <h2>Union Territories</h2>
-                <table className="table ">
-                    <thead className="text-black-0 w-100">
-                        <tr>
-                            <th>Sr.no</th>
-                            <th>State</th>
-                            <th>Helpline-number</th>
-                        </tr>
-                    </thead>
-                    { helplines }
-                </table>
-            </div>
-            <p />
-            <div className="container-fluid">
-                <h2>Mumbai Helpline Numbers</h2>
-                <table className="table ">
-                    <thead className="text-black-0 w-100">
-                        <tr>
-                            <th>Sr.no</th>
-                            <th>Ward</th>
-                            <th>Areas Included</th>
-                            <th>Helpline-number</th>
-                        </tr>
-                    </thead>
-                    { mumbaihelplines }
-                </table>
-            </div>
-
-
-        </div>
+        return s.statename.toLowerCase().includes( search.toLowerCase() )
+    }
     )
+
+    const filteredSearchUT = Helplines.filter( s =>
+    {
+        return s.ut.toLowerCase().includes( search.toLowerCase() )
+    }
+    )
+
+    const filteredMumbai = MumbaiHelpline.filter( s =>
+    {
+        return s.area.toLowerCase().includes( search.toLowerCase() )
+    }
+    )
+    return (
+        <div className="help">
+            <div className="container-fluid">
+                <div className={ styles.search_option }>
+                    <input type="text" placeholder=" Search " onChange={ e => setSearch( e.target.value ) } />
+
+                </div>
+                <br />
+                <h4> State Helpline Numbers</h4><p />
+                <Table >
+                    <thead >
+                        <tr>
+                            <th>Sr.no</th>
+                            <th>Statename</th>
+                            <th>Helpline-number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            filteredSearch.map( ( s, i ) => (
+                                <TableRow
+                                    key={ i }
+                                    id={ s.id }
+                                    name={ s.statename }
+                                    number={ s.helplinenumber } />
+                            )
+                            )
+                        }
+                    </tbody>
+                </Table>
+                <p /><br />
+                <h4> Union Territory Helpline Numbers</h4>
+                <p />
+                <Table >
+                    <thead >
+                        <tr>
+                            <th>Sr.no</th>
+                            <th>Union Territory</th>
+                            <th>Helpline-number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            filteredSearchUT.map( ( s, i ) => (
+                                <TableRow
+                                    key={ i }
+                                    id={ s.id }
+                                    name={ s.ut }
+                                    number={ s.helpline } />
+                            )
+                            )
+                        }
+                    </tbody>
+                </Table>
+                <p /><br />
+                <h4>Mumbai Helpline Numbers</h4>
+                <p />
+                <Table >
+                    <thead >
+                        <tr>
+                            <th>Ward </th>
+                            <th>Area</th>
+                            <th>Helpline-number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            filteredMumbai.map( ( s, i ) => (
+                                <TableRow
+                                    key={ i }
+                                    id={ s.ward }
+                                    name={ s.area }
+                                    number={ s.helplinenumber } />
+                            )
+                            )
+                        }
+                    </tbody>
+                </Table>
+            </div>
+        </div>
+
+    );
 }
 
 export default Help;

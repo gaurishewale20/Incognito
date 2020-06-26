@@ -7,11 +7,11 @@ export default {
         "& h1": {
             marginBottom: "4.5rem",
 
-            [ sizes.down( "lg" ) ]: {
+            [sizes.down("lg")]: {
                 margin: "4rem 0",
             },
 
-            [ sizes.down( "md" ) ]: {
+            [sizes.down("md")]: {
                 margin: "2.5rem 0",
             },
         },
@@ -23,7 +23,7 @@ export default {
         justifyContent: "space-around",
         alignItems: "stretch",
 
-        [ sizes.down( "sm" ) ]: {
+        [sizes.down("sm")]: {
             padding: "0",
         },
     },

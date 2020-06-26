@@ -6,30 +6,23 @@ import Result from './Result';
 import FAQs from './FAQs/faqs';
 import Help from './Helpline/Help';
 import Cards from './Cards';
-import styles from "../styles/Home";
-import { withStyles } from "@material-ui/styles";
-import { HELPLINENUMBERS } from '../shared/helplinenumbers';
-import { HELPLINES } from '../shared/helplines';
+//import { HELPLINES } from '../shared/helplines';
 import Essentials from './Essentials/Essentials';
 import ScrollToTop from './ScrollTotop';
 import Symptoms from './Symptoms/Symptoms';
 import Dashboard from './Dashboard/Dashboard';
 import Precautions from './Precautions/Precautions';
-import { MUMBAIHELPLINES } from '../shared/mumbaihelpline';
+//import { MUMBAIHELPLINES } from '../shared/mumbaihelpline';
 import Graph from './../image/gifs/graph.gif';
 import Csymptoms from './../image/gifs/Csymptoms.gif';
-import test from './../image/gifs/test.gif';
+import testg from './../image/gifs/testgiphy.gif';
 import Prevention from './../image/gifs/prevention.gif';
-import Mask from './../image/images/mask.jpg';
-import help from './../image/gifs/help.gif';
+import Mask1 from './../image/images/mask1.jpg';
+import help from './../image/gifs/support.gif';
+import Process from './Procedure/Process';
 
 class Home extends Component
 {
-    state = {
-        helplinenumbers: HELPLINENUMBERS,// state 
-        helplines: HELPLINES,        // union Territory
-        mumbaihelplines: MUMBAIHELPLINES //Mumbai
-    }
 
     render ()
     {
@@ -38,16 +31,17 @@ class Home extends Component
         {
             const gifIcons = [
                 { src: `${ Graph }`, title: "Statewise Graphs Dashboard", content: "Get detailed statewise reports and graphs..", link: "./dashboard" },
-                { src: `${ Csymptoms }`, title: "Symptoms of Covid-19", content: " Take a quick look at all the symptoms of covid-19 disease...and get to know are you suffering from this or not?", link: "./symptoms" },
-                { src: `${ test }`, title: " Health Test", content: "Feeling queasy??? Take a quick health test!", link: "./test" },
+                { src: `${ Mask1 }`, title: "Essential commodities", content: "Troubled in getting essential things?... Get here the online shopping of masks and sanitizer,etc...", link: "./essentials" },
                 { src: `${ Prevention }`, title: "  Preventive Measures", content: " Follow this 5 rules of prevention & ensure your health safety!", link: "./precautions" },
-                { src: `${ Mask }`, title: "Essential commodities", content: " Have you troubled where can I get essential things?... Get here the online shopping of masks and sanitinzer,etc...", link: "./essentials" },
-                { src: `${ help }`, title: "Helpline", content: " Are you facing any problem? Do you need any help? Get helpline number and place a call.", link: "./help" },
+
+                { src: `${ Csymptoms }`, title: "Symptoms of Covid-19", content: " Take a quick look and get to know are you suffering from this or not?", link: "./symptoms" },
+                { src: `${ testg }`, title: " Health Test", content: "Feeling queasy??? Take a quick health test!", link: "./test" },
+                { src: `${ help }`, title: "Helpline", content: " Facing any problem? Need any help? Get helpline number and place a call.", link: "./help" },
             ];
-            const { classes } = this.props;
+            //  const { classes } = this.props;
             return (
-                <div className={ classes.home }>
-                    <div className={ classes.cardsBox }>
+                <div className="home container-fluid ">
+                    <div className="row">
                         { gifIcons.map( ( s, i ) => (
                             <Cards
                                 key={ i }
@@ -57,8 +51,10 @@ class Home extends Component
                                 link={ s.link }
                             />
                         ) ) }
+
                     </div>
                     <ScrollToTop />
+
                 </div>
             );
         }
@@ -76,7 +72,9 @@ class Home extends Component
                     <Route exact path="/faqs" component={ () => <FAQs /> } />
                     <Route exact path="/symptoms" component={ () => <Symptoms /> } />
                     <Route exact path="/precautions" component={ () => <Precautions /> } />
-                    <Route exact path="/help" component={ () => <Help helplinenumbers={ this.state.helplinenumbers } helplines={ this.state.helplines } mumbaihelplines={ this.state.mumbaihelplines } /> } />
+                    <Route exact path="/process" component={ () => <Process /> } />
+
+                    <Route exact path="/help" component={ () => <Help /> } />
                     <Route exact path="/essentials" component={ () => <Essentials /> } />
                     <Route exact path="/aboutus" component={ () => <About /> } />
                     <Redirect to="/home" />
@@ -86,4 +84,4 @@ class Home extends Component
     }
 }
 
-export default withStyles( styles )( Home );
+export default Home;

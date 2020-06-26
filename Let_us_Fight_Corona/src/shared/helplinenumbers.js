@@ -1,4 +1,4 @@
-export const HELPLINENUMBERS = [{
+export const HelplineNumbers = [{
     id: 1,
     statename: "Andhra Pradesh",
     helplinenumber: "0866-2410978",

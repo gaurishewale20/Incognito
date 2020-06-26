@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import quizService from "./quizService";
 import QuestionBox from "../components/QuestionBox/QuestionBox";
 import Result from "../components/Result";
 
 
-
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 class Test extends Component
 {
@@ -14,7 +11,6 @@ class Test extends Component
         questionBank: [],
         score: 0,
         responses: 0,
-        msg: " "
     };
     getQuestions = () =>
     {
@@ -37,35 +33,6 @@ class Test extends Component
         this.setState( {
             responses: this.state.responses < 4 ? this.state.responses + 1 : 4
         } );
-        if ( this.state.responses === 3 )
-        {
-            if ( this.state.score === 0 )
-            {
-                this.setState( {
-                    msg: "Don't worry you are safe.",
-                } );
-            }
-            else if ( this.state.score === 1 )
-            {
-                this.setState( {
-                    msg: "You are at low risk. Take Care and Stay at home. ",
-                } );
-            }
-
-            else if ( this.state.score === 2 )
-            {
-                this.setState( {
-                    msg: "You are at risk. Take Care and Stay at home.",
-                } );
-            }
-            else 
-            {
-                this.setState( {
-                    msg: "You are at high risk. Take Care and Stay at home. Consult Doctor",
-                } );
-            }
-
-        }
 
     };
     Retake = () =>
@@ -74,7 +41,6 @@ class Test extends Component
         this.setState( {
             score: 0,
             responses: 0,
-            msg: " "
         } );
     }
     componentDidMount ()
@@ -86,13 +52,17 @@ class Test extends Component
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <Breadcrumb>
-                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem >Test</BreadcrumbItem>
-                    </Breadcrumb>
+
                     <div className="col-12">
+                        <br />
                         { this.state.responses === 4 ? ( <h3>Results</h3> ) : ( <h3>Test</h3> ) }
-                        <hr />
+                    </div>
+                    <div className="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Hello viewer!</strong> This is a very basic test and we urge you to seek medical help immediately if you are unwell.
+                        Please answer the following questions honestly to get truthful result.
+                                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
 
                 </div>
@@ -112,8 +82,8 @@ class Test extends Component
                             )
                         ) }
                     { this.state.responses === 4 ? (
-                        <Result msg={ this.state.msg } Retake={ this.Retake } /> ) : null }
-                    <p />
+                        <Result score={ this.state.score } Retake={ this.Retake } /> ) : null }
+                    <br />
                 </div>
 
             </div>

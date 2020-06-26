@@ -63,24 +63,25 @@ class DashJS extends React.Component
                             </tr>
                         </thead>
 
+                        <tbody>
+                            { data.map( stateinfo =>
+                            {
+                                const { statename, statecode, recovered, confirmed, deaths } = stateinfo;
+                                return (
+                                    <>
 
-                        { data.map( stateinfo =>
-                        {
-                            const { statename, statecode, recovered, confirmed, deaths } = stateinfo;
-                            return (
-                                <>
+                                        <tr key={ statename } className={ styles.statetablerow }>
+                                            <td >{ statename }</td>
+                                            <td >{ confirmed }</td>
+                                            <td>{ recovered }</td>
+                                            <td>{ deaths }</td>
+                                        </tr>
 
-                                    <tr key={ statecode } className={ styles.statetablerow }>
-                                        <td >{ statename }</td>
-                                        <td >{ confirmed }</td>
-                                        <td>{ recovered }</td>
-                                        <td>{ deaths }</td>
-                                    </tr>
-
-                                </>
-                            )
-                        } )
-                        }
+                                    </>
+                                )
+                            } )
+                            }
+                        </tbody>
                     </table>
 
                 </div>

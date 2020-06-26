@@ -52,14 +52,16 @@ img {
     opacity: .5;
 }
 
+
+/*
 table,
 th,
 td {
     border: none;
     padding: 50px;
     align-items: center;
-    margin-left: 20px;
 }
+*/
 
 .icon {
     height: 40px;

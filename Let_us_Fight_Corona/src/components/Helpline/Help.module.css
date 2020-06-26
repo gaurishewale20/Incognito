@@ -1,5 +1,17 @@
   .staterow:nth-child(odd) {
-      background-color: green;
+      background-color: rgb(197, 137, 209);
       color: #fff;
       font-family: Arial;
+  }
+  
+  input {
+      border: none;
+      border-radius: 2rem;
+      width: 15rem;
+      height: 2.5rem;
+      text-align: center;
+  }
+  
+  input:focus {
+      outline: none;
   }

@@ -53,23 +53,30 @@ function Essentials ()
     return (
 
         <div className="container-fluid">
-            <div className="row row-content">
+            <div className="row row-content  align-items-center">
                 { pics.map( ( i ) => (
-                    <>
-                        <Card style={ { marginBottom: '2rem' } }>
-                            <CardImg width="100%" src={ i.src } alt="Card image cap" />
-                            <CardTitle color="primary" style={ { margin: "1rem " } }>{ i.title }</CardTitle >
 
-                            <CardBody >
-                                <ul key={ i.id } type="none">
-                                    <li><CardLink href={ i.link1 }>{ i.hlink1 }</CardLink></li>
-                                    <li><CardLink href={ i.link2 }>{ i.hlink2 }</CardLink></li>
-                                    <li><CardLink href={ i.link3 }>{ i.hlink3 }</CardLink></li>
-                                    <li><CardLink href={ i.link4 }>{ i.hlink4 }</CardLink></li>
-                                </ul>
-                            </CardBody>
-                        </Card>
-                    </>
+
+                    <div className="homecards col-md-6">
+
+                        <div className="card text-center " >
+                            <div className="container-fluid ">
+                                <img src={ i.src } alt={ i.title } className="card-img-top" />
+                            </div>
+                            <div className="card-body text-dark">
+                                <h4 className="card-title">{ i.title }</h4>
+                                <p className="card-text text-secondary">
+                                    <ul key={ i.id } type="none">
+                                        <li><CardLink href={ i.link1 }>{ i.hlink1 }</CardLink></li>
+                                        <li><CardLink href={ i.link2 }>{ i.hlink2 }</CardLink></li>
+                                        <li><CardLink href={ i.link3 }>{ i.hlink3 }</CardLink></li>
+                                        <li><CardLink href={ i.link4 }>{ i.hlink4 }</CardLink></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <p />
+                    </div>
 
                 ) ) }
             </div>
@@ -81,3 +88,17 @@ function Essentials ()
 
 export default Essentials;
 
+/*
+ <Card style={ { marginBottom: '2rem' } }>
+                            <CardImg width="100%" src={ i.src } alt="Card image cap" />
+                            <CardTitle color="primary" style={ { margin: "1rem " } }>{ i.title }</CardTitle >
+
+                            <CardBody >
+                                <ul key={ i.id } type="none">
+                                    <li><CardLink href={ i.link1 }>{ i.hlink1 }</CardLink></li>
+                                    <li><CardLink href={ i.link2 }>{ i.hlink2 }</CardLink></li>
+                                    <li><CardLink href={ i.link3 }>{ i.hlink3 }</CardLink></li>
+                                    <li><CardLink href={ i.link4 }>{ i.hlink4 }</CardLink></li>
+                                </ul>
+                            </CardBody>
+                        </Card>*/

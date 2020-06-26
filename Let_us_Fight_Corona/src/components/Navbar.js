@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Home from './HomeComponent';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
@@ -30,6 +29,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles( ( theme ) => ( {
     root: {
         display: 'flex',
+        backgroundColor: "rgba(238, 227, 240, 0.541)",
     },
     drawer: {
         [ theme.breakpoints.up( 'sm' ) ]: {
@@ -55,9 +55,11 @@ const useStyles = makeStyles( ( theme ) => ( {
         },
     },
     // necessary for content to be below app bar
+    //linear-gradient(rgb(130, 32, 143),rgb(247, 169, 250), rgb(170, 109, 179))
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
         width: drawerWidth,
+        background: "linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236))",
     },
     content: {
         flexGrow: 1,
@@ -80,7 +82,7 @@ function ResponsiveDrawer ( props )
     const drawer = (
         <div>
             <div className={ classes.toolbar } />
-            <Divider />
+
             <List>
                 <ListItem button key="Home">
                     <Link to="/home"><ListItemIcon>{ <HomeIcon /> }</ListItemIcon></Link>
@@ -130,8 +132,10 @@ function ResponsiveDrawer ( props )
     return (
         <div className={ classes.root }>
             <CssBaseline />
-            <AppBar position="fixed" className={ classes.appBar }>
-                <p />
+            <AppBar position="fixed" className={ classes.appBar } style={ {
+                background: "linear-gradient(to right, rgb(130, 32, 143), rgb(170, 109, 179),rgb(247, 169, 250))"
+            } }>
+
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -142,7 +146,7 @@ function ResponsiveDrawer ( props )
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h4" displayInline>
+                    <Typography variant="h4" displayblock>
                         Let's Fight Corona
           </Typography>
                 </Toolbar>
@@ -181,11 +185,14 @@ function ResponsiveDrawer ( props )
             </nav>
             <main className={ classes.content }>
                 <div className={ classes.toolbar } />
-                <Typography paragraph>
+                <Typography component={ 'span' } varient={ 'body2' }>
                     <Home />
+                    <Footer />
                 </Typography>
-                <Footer />
+
             </main>
+
+
         </div>
     );
 }
