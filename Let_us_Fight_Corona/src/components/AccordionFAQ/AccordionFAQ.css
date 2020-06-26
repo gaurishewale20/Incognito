@@ -6,7 +6,8 @@
 
 .accordion {
     background-color: #fff;
-    color: rgb(35, 211, 35);
+    color: #1F363D;
+    /* rgb(35, 211, 35); */
     cursor: pointer;
     padding: 15px;
     display: flex;
@@ -19,7 +20,8 @@
 
 .accordion:hover,
 .accordion .active {
-    background-color: rgb(17, 167, 55);
+    background-color: #1F363D;
+    /*rgb(17, 167, 55); */
     color: #fff;
     outline: none;
 }

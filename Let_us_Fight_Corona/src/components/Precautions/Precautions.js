@@ -11,7 +11,7 @@ class Precautions extends React.Component
     render ()
     {
         return (
-            <div className="container-fluid" style={ { backgroundColor: "blue" } }>
+            <div className="container-fluid" style={ { backgroundColor: "#37414a" } }>
                 <div className="row justify-content-center p-2">
                     <Card1 />
                     <Card2 />

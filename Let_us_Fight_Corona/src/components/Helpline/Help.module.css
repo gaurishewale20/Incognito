@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   .staterow:nth-child(odd) {
       background-color: rgb(197, 137, 209);
       color: #fff;
@@ -15,3 +16,12 @@
   input:focus {
       outline: none;
   }
+=======
+.staterow:nth-child(odd) {
+    /* 1 background-color: #1e5c53 */
+    background-color: #37414a;
+    /* green; */
+    color: #fff;
+    font-family: Arial;
+}
+>>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
