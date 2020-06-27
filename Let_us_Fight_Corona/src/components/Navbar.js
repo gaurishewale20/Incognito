@@ -26,18 +26,14 @@ import Footer from './FooterComponent';
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles( ( theme ) => ( {
     root: {
         display: 'flex',
-<<<<<<< HEAD
-        backgroundColor: "rgba(238, 227, 240, 0.541)",
-=======
-        /* 1 backgroundColor: 'silver',*/
-        backgroundColor: '8c8d8f'
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
+        /* 1 backgroundColor: 'silver'*/
+        backgroundColor: '8c8d8f',
     },
     drawer: {
-        [theme.breakpoints.up('sm')]: {
+        [ theme.breakpoints.up( 'sm' ) ]: {
             width: drawerWidth,
             flexShrink: 0,
 
@@ -47,26 +43,33 @@ const useStyles = makeStyles((theme) => ({
         // for let's fight corona header! -- 1  backgroundColor: 'darkslategray',
         // ab1 backgroundColor: '#1c0118', // 1C0118
         // ab1 backgroundImage: 'linear-gradient(90deg, #1c0118 30%, #ffffff 100%)',
-        backgroundColor: '#233B57',
-        backgroundImage: 'linear-gradient(100deg, #233B57 60%, #ffffff 100%)',
+        //backgroundColor: '#233B57',
+        //backgroundImage: 'linear-gradient(100deg, #233B57 60%, #ffffff 100%)',
+
+        //  background: "linear-gradient(to right, rgb(130, 32, 143), rgb(170, 109, 179),rgb(247, 169, 250))"
+        background: "linear-gradient(to right, #398ea8 50% ,#7cbef8)",
+
         // ab3 backgroundColor: '#333630',
         // ab3 backgroundImage: 'linear-gradient(90deg, #333630 30%, #ffffff 100%)',
         // default backgroundColor: '#373a42',
 
-        [theme.breakpoints.up('sm')]: {
-            width: `calc(100% - ${drawerWidth}px)`,
+        [ theme.breakpoints.up( 'sm' ) ]: {
+            width: `calc(100% - ${ drawerWidth }px)`,
             marginLeft: drawerWidth,
             zIndex: theme.zIndex.drawer + 1,
-            transition: theme.transitions.create(['width', 'margin'], {
+            transition: theme.transitions.create( [ 'width', 'margin' ], {
                 easing: theme.transitions.easing.sharp,
                 duration: theme.transitions.duration.leavingScreen,
 
-            }),
+            } ),
         },
     },
     menuButton: {
-        marginRight: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
+        marginRight: theme.spacing( 2 ),
+        "&:focus": {
+            outline: 'none',
+        },
+        [ theme.breakpoints.up( 'sm' ) ]: {
             display: 'none',
         },
     },
@@ -81,8 +84,8 @@ const useStyles = makeStyles((theme) => ({
         //gr1 backgroundImage: 'linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)',
         // gr2 backgroundColor: '#fee140',
         // gr2 backgroundImage: 'linear-gradient(180deg, #FEE140 0%, #FA709A 100%);',
-        backgroundColor: '#74ebd5',
-        backgroundImage: ' linear-gradient(160deg, #ffffff 40%, #9FACE6 100%)',
+        //backgroundColor: '#74ebd5',
+        // backgroundImage: ' linear-gradient(160deg, #ffffff 40%, #9FACE6 100%)',
         // gr4 backgroundColor: '#ffdee9',
         // gr4 backgroundImage: 'linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%)',
         // gr5  backgroundColor: '#FFFB7D',
@@ -90,71 +93,72 @@ const useStyles = makeStyles((theme) => ({
         //backgroundColor: 'FFFFFF',
         //backgroundImage: 'linear-gradient(180deg, #FFFFFF 10%, #FFdde1 100%)',
         width: drawerWidth,
-        background: "linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236))",
+        //background: "linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236))",
+        background: "linear-gradient(#fff,#7cbef8)",
+
     },
     content: {
         // 1 backgroundColor: 'silver',
-        backgroundColor: '#aeafd1',
+        //  backgroundColor: '#aeafd1',
         flexGrow: 1,
-        padding: theme.spacing(3),
+        padding: theme.spacing( 3 ),
     },
-}));
+} ) );
 
-function ResponsiveDrawer(props) {
+
+
+function ResponsiveDrawer ( props )
+{
     const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [ mobileOpen, setMobileOpen ] = React.useState( false );
 
-    const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
+    const handleDrawerToggle = () =>
+    {
+        setMobileOpen( !mobileOpen );
     };
 
     const drawer = (
         <div>
-<<<<<<< HEAD
             <div className={ classes.toolbar } />
 
-=======
-            <div className={classes.toolbar} />
-            <Divider />
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
             <List>
-                <ListItem button key="Home">
-                    <Link to="/home"><ListItemIcon>{<HomeIcon />}</ListItemIcon></Link>
+                <ListItem button key="Home" >
+                    <Link to="/home"><ListItemIcon>{ <HomeIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./home' >
                         <ListItemText primary="Home" /></NavLink>
                 </ListItem>
                 <ListItem button key="Dashboard">
-                    <Link to="/dashboard"><ListItemIcon>{<DashboardIcon />}</ListItemIcon></Link>
+                    <Link to="/dashboard"><ListItemIcon>{ <DashboardIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./dashboard' >
                         <ListItemText primary="Dashboard" /></NavLink>
                 </ListItem>
                 <ListItem button key="Test">
 
-                    <Link to="/test"><ListItemIcon>{< AssessmentIcon />}</ListItemIcon></Link>
+                    <Link to="/test"><ListItemIcon>{ < AssessmentIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./test' >
                         <ListItemText primary="Test" /></NavLink>
                 </ListItem>
                 <ListItem button key="FAQs">
-                    <Link to="/faqs"><ListItemIcon>{<QuestionAnswerIcon />}</ListItemIcon></Link>
+                    <Link to="/faqs"><ListItemIcon>{ <QuestionAnswerIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./faqs' >
-                        <ListItemText primary="FAQs" /></NavLink>
+                        <ListItemText primary="FAQs and Process" /></NavLink>
                 </ListItem>
                 <ListItem button key="Helpline">
-                    <Link to="/help"> <ListItemIcon>{<HelpIcon />}</ListItemIcon></Link>
+                    <Link to="/help"> <ListItemIcon>{ <HelpIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./help' >
                         <ListItemText primary="Helpline" /></NavLink>
                 </ListItem>
 
                 <ListItem button key="Essentials">
-                    <Link to="/essentials"> <ListItemIcon>{<AddShoppingCartIcon />}</ListItemIcon></Link>
+                    <Link to="/essentials"> <ListItemIcon>{ <AddShoppingCartIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./essentials' >
                         <ListItemText primary="Essentials" /></NavLink>
                 </ListItem>
 
                 <ListItem button key="AboutUs">
-                    <Link to="/aboutus"><ListItemIcon>{<InfoIcon />}</ListItemIcon></Link>
+                    <Link to="/aboutus"><ListItemIcon>{ <InfoIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='/aboutus' >
                         <ListItemText primary="About us" /></NavLink>
                 </ListItem>
@@ -166,79 +170,66 @@ function ResponsiveDrawer(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className={classes.root}>
+        <div className={ classes.root }>
             <CssBaseline />
-<<<<<<< HEAD
-            <AppBar position="fixed" className={ classes.appBar } style={ {
-                background: "linear-gradient(to right, rgb(130, 32, 143), rgb(170, 109, 179),rgb(247, 169, 250))"
-            } }>
+            <AppBar position="fixed" className={ classes.appBar }>
 
-=======
-            <AppBar position="fixed" className={classes.appBar}>
-                <p />
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
                 <Toolbar>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
-                        onClick={handleDrawerToggle}
-                        className={classes.menuButton}
+                        onClick={ handleDrawerToggle }
+                        className={ classes.menuButton }
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h4" displayblock>
+                    <Typography variant="h6">
                         Let's Fight Corona
           </Typography>
                 </Toolbar>
             </AppBar>
-            <nav className={classes.drawer} aria-label="mailbox folders">
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+            <nav className={ classes.drawer } aria-label="mailbox folders">
+                {/* The implementation can be swapped with js to avoid SEO duplication of links. */ }
 
                 <Hidden smUp implementation="css">
                     <Drawer
-                        container={container}
+                        container={ container }
 
                         variant="temporary"
-                        anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-                        open={mobileOpen}
-                        onClose={handleDrawerToggle}
-                        classes={{
+                        anchor={ theme.direction === 'rtl' ? 'right' : 'left' }
+                        open={ mobileOpen }
+                        onClose={ handleDrawerToggle }
+                        classes={ {
                             paper: classes.drawerPaper,
-                        }}
-                        ModalProps={{
+                        } }
+                        ModalProps={ {
                             keepMounted: true, // Better open performance on mobile.
-                        }}
+                        } }
                     >
-                        {drawer}
+                        { drawer }
                     </Drawer>
                 </Hidden>
                 <Hidden xsDown implementation="css">
                     <Drawer
-                        classes={{
+                        classes={ {
                             paper: classes.drawerPaper,
 
-                        }}
+                        } }
                         variant="permanent"
                         open
                     >
-                        {drawer}
+                        { drawer }
                     </Drawer>
                 </Hidden>
             </nav>
-<<<<<<< HEAD
             <main className={ classes.content }>
                 <div className={ classes.toolbar } />
                 <Typography component={ 'span' } varient={ 'body2' }>
-=======
-            <main className={classes.content}>
-                <div className={classes.toolbar} />
-                <Typography paragraph>
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
                     <Home />
-                    <Footer />
-                </Typography>
 
+                </Typography>
+                <Footer />
             </main>
 
 

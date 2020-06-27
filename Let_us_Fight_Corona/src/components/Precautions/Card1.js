@@ -8,7 +8,7 @@ const Card1 = () =>
 {
     return (
         //Card1
-        <div className="card mb-3" style={ { maxWidth: "540px" } }>
+        <div className="card ">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={ `${ cleanhands }` } className="card-img" alt="clean hands" />
@@ -27,7 +27,7 @@ const Card1 = () =>
             procedure to wash hands</button>
                 <div id="demo1" className="collapse">
                     <br />
-                    <div><img src={ `${ Pic11 }` } width="500" height="400" alt="Procedure to wash hands properly" /></div>
+                    <div><img src={ `${ Pic11 }` } width="100%" height="100%" alt="Procedure to wash hands properly" /></div>
                 </div>
             </div>
 

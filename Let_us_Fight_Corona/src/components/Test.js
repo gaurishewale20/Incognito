@@ -85,7 +85,7 @@ class Test extends Component
                         <Result score={ this.state.score } Retake={ this.Retake } /> ) : null }
                     <br />
                 </div>
-
+                <br />
             </div>
 
         )

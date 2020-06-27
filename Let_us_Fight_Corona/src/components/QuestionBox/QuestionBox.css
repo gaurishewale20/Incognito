@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .question {
@@ -24,7 +24,7 @@
     /* 1 background-color:
         #40798c;
         */
-    background-color: #37414a;
+    background-color: #649ac9;
     margin: 10px;
     outline: none;
     border: none;
@@ -32,7 +32,7 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-radius: 4px;
-    box-shadow: 5px 5px 2px rgb(184, 180, 180);
+    box-shadow: 3px 2px 2px rgb(184, 180, 180);
     cursor: pointer;
 }
 
@@ -49,11 +49,16 @@
     text-align: center;
 }
 
+.score-card {
+    color: "purple";
+    background-color: #e5e5e5;
+    font-size: 1.5rem;
+    border-radius: 0px 30px;
+}
+
 .playBtn {
-    position: absolute;
     font-size: 1.4em;
     padding: 5px;
-    top: 20rem;
     background-color: rgb(46, 182, 46);
     color: rgb(255, 255, 255);
     width: 200px;

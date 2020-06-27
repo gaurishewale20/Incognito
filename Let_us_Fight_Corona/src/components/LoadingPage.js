@@ -1,11 +1,11 @@
 import React from "react";
-import { CubeGrid } from 'styled-loaders-react';
+import { Block } from 'styled-loaders-react';
 
 function LoadingPage ()
 {
     return (
         <div className="container-fluid d-flex justify-content-center align-content-center">
-            <CubeGrid color="rgb(173,125,201)" size="80px" /></div>
+            < Block color="#7cbef8" size="80px" /></div>
     );
 
 }

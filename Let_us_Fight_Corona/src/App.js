@@ -6,15 +6,20 @@ import LoadingPage from './components/LoadingPage';
 
 class App extends Component
 {
-  state = {
-    loading: true
+  constructor ( props )
+  {
+    super( props );
+    this.state = {
+      loading: true,
+    }
   }
+
   componentDidMount = () =>
   {
     setTimeout( () =>
     {
       this.setState( {
-        loading: false
+        loading: false,
       } )
     }, 4500 )
   }

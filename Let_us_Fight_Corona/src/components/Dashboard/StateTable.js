@@ -70,7 +70,7 @@ class DashJS extends React.Component
                                 return (
                                     <>
 
-                                        <tr key={ statename } className={ styles.statetablerow }>
+                                        <tr key={ statecode } className={ styles.statetablerow }>
                                             <td >{ statename }</td>
                                             <td >{ confirmed }</td>
                                             <td>{ recovered }</td>

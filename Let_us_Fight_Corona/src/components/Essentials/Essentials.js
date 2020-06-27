@@ -1,5 +1,5 @@
 import React from "react";
-import { CardBody, CardTitle, CardLink, Card, CardImg } from 'reactstrap';
+import { CardLink } from 'reactstrap';
 import essentialmask from '../../image/images/mask.png';
 import sanitizer from '../../image/images/sanitizer.png';
 import gloves from '../../image/images/gloves.png';
@@ -18,7 +18,7 @@ function Essentials ()
             link4: "https://www.fabindia.com/collection/face-masks", hlink4: "Buy on Fabindia",
         },
         {
-            src: `${ sanitizer }`, title: "Buy SanitizerHere", id: 2,
+            src: `${ sanitizer }`, title: "Buy Sanitizer Here", id: 2,
             link1: "https://www.amazon.in/Hand-Sanitizers/b?ie=UTF8&node=4264053031", hlink1: "Buy on Amazon",
             link2: "https://www.myntra.com/sanitizer", hlink2: "Buy on Myntra",
             link3: "https://www.flipkart.com/q/hand-sanitizer", hlink3: "Buy on FlipKart",
@@ -54,10 +54,10 @@ function Essentials ()
 
         <div className="container-fluid">
             <div className="row row-content  align-items-center">
-                { pics.map( ( i ) => (
+                { pics.map( ( i, s ) => (
 
 
-                    <div className="homecards col-md-6">
+                    <div key={ s } className="homecards col-md-6">
 
                         <div className="card text-center " >
                             <div className="container-fluid ">
@@ -65,14 +65,14 @@ function Essentials ()
                             </div>
                             <div className="card-body text-dark">
                                 <h4 className="card-title">{ i.title }</h4>
-                                <p className="card-text text-secondary">
-                                    <ul key={ i.id } type="none">
+                                <div className="card-text text-secondary">
+                                    <ul type="none">
                                         <li><CardLink href={ i.link1 }>{ i.hlink1 }</CardLink></li>
                                         <li><CardLink href={ i.link2 }>{ i.hlink2 }</CardLink></li>
                                         <li><CardLink href={ i.link3 }>{ i.hlink3 }</CardLink></li>
                                         <li><CardLink href={ i.link4 }>{ i.hlink4 }</CardLink></li>
                                     </ul>
-                                </p>
+                                </div>
                             </div>
                         </div>
                         <p />

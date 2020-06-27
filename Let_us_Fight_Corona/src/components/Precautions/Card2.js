@@ -6,7 +6,7 @@ const Card2 = () =>
 {
 
     return (
-        <div className="card mb-3" style={ { maxWidth: "540px" } } >
+        <div className="card "  >
             <div className="row">
                 <div className="col-sm-4">
                     <img src={ `${ face }` } className="card-img" alt="face" />
@@ -15,7 +15,7 @@ const Card2 = () =>
                     <div className="card-body">
                         <h5 className="card-title">Don't touch your face</h5>
                         <hr />
-                        <p className="card-text">To help in prevnenting infection, keep your hands away from your eyes, nose and mouth.As
+                        <p className="card-text">To help in preventing infection, keep your hands away from your eyes, nose and mouth.As
             touching your dirty hands to this part allows virus to enter into your body.</p>
                     </div>
                 </div>

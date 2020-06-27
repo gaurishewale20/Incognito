@@ -4,7 +4,7 @@ import SocialDistance from '../../image/gifs/social_distance.gif';
 const Card4 = () =>
 {
     return (
-        <div className="card mb-3" style={ { maxWidth: "540px" } }>
+        <div className="card " >
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={ `${ SocialDistance }` } className="card-img" alt="Social Distance" />

@@ -11,13 +11,15 @@ class Precautions extends React.Component
     render ()
     {
         return (
-            <div className="container-fluid" style={ { backgroundColor: "#37414a" } }>
-                <div className="row justify-content-center p-2">
-                    <Card1 />
-                    <Card2 />
-                    <Card3 />
-                    <Card4 />
-                    <Card5 />
+            <div className="container-fluid ">
+                <div className="col-12">
+
+                    <Card4 /><br />
+                    <Card2 /><br />
+                    <Card1 /><br />
+                    <Card3 /><br />
+                    <Card5 /><br />
+
                 </div>
             </div>
         );

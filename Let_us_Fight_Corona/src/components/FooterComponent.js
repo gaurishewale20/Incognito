@@ -5,7 +5,7 @@ function Footer ( props )
     return (
         <div className="footer row justify-content-center">
             <div className="text-center">
-                <h4>Stay Healthy. Stay Safe</h4>
+                <h4>Don't Panic. Stay Healthy. Stay Safe.</h4>
                 <p> © Team Incognito</p>
             </div>
         </div>

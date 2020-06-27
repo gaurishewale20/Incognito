@@ -1,6 +1,7 @@
 import React from "react";
 import AccordionFAQ from '../AccordionFAQ/AccordionFAQ';
 import ScrollToTop from '../ScrollTotop';
+import { Link } from 'react-router-dom';
 import "./faqs.css";
 
 const FAQs = () =>
@@ -9,7 +10,7 @@ const FAQs = () =>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-12">
-                    <h3>FAQs</h3>
+                    <h3>FAQs and <Link to="/process">PROCESS</Link></h3>
                     <hr />
                 </div>
 
@@ -125,6 +126,7 @@ const FAQs = () =>
 
             </div>
             <ScrollToTop />
+            <br />
         </div>
 
     );

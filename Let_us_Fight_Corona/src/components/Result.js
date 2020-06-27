@@ -1,11 +1,11 @@
 import React from "react";
-import docR from "./../image/images/doc1.jpg"
+//import docR from "./../image/images/doc1.jpg"
 function Result ( { score, Retake } )
 {
     var message;
     if ( `${ score }` < 1 )
     {
-        message = "Don't worry you are safe.";
+        message = "Comparitively you are safer.";
     }
     else if ( `${ score }` < 2 )
     {
@@ -17,16 +17,16 @@ function Result ( { score, Retake } )
     }
     else 
     {
-        message = "You are at high risk. Take Care and Stay at home. Consult Doctor immediately";
+        message = "You are at high risk. Take Care and Stay at home. Consult Doctor immediately.";
     }
     return (
-        <div className="score-board row row-content p-5" style={ { backgroundImage: `url(${ docR })`, backgroundSize: "cover" } }>
-            <div className="score-card" style={ { color: "white", fontSize: "1.5rem" } }>
-                { message }</div>
-            <span >
+        <div className="score-board  p-5">
+            <div className="score-card row align-items-center p-5">
+                { message }</div><br />
+            <div >
                 < button className="playBtn" onClick={ Retake }>
                     Retake the Test!
-        </button></span>
+        </button></div>
         </div> );
 
 }

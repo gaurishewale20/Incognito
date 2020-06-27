@@ -1,10 +1,35 @@
 body {
-<<<<<<< HEAD
-    background-color: rgb(197, 47, 160);
+    background: white;
 }
 
 .App {
     box-sizing: inherit;
+}
+
+.page {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+.fade-appear .fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear-active .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
 }
 
 
@@ -14,11 +39,9 @@ body {
     border: 0;
     margin: 0;
     padding: 30px;
-    background: linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236));
+    background: linear-gradient(rgb(192, 211, 192), rgb(203, 232, 240), rgb(205, 221, 204));
     box-sizing: border-box;
-=======
     background-color: #060e11/*#f0ffff;*/
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
 }
 
 .container {
@@ -46,8 +69,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-=======
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
@@ -56,19 +77,14 @@ body {
     color: floralwhite;
 }
 
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
 .navbar-dark {
-    background-color: rgb(229, 147, 147)/* #512DA8*/
+    background-color: rgb(219, 214, 214)/* #512DA8*/
     ;
 }
 
 .footer {
-<<<<<<< HEAD
-    background-color: black;
     color: white;
-=======
     /*background-color: #ccffcc; */
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
     margin-top: 5px 0px 0px 0px;
     padding: 20px 0px 20px 0px;
     bottom: 0;
@@ -77,12 +93,17 @@ body {
     border: none;
     top: 100%;
     background-color: #414b4e;
-    background-image: linear-gradient(60deg, #414b4e 0%, #d3d8da 100%);
+    background: linear-gradient(60deg, #414b4e 0%, #d3d8da 100%);
 }
 
 .row-header {
     margin: 0px auto;
     padding: 0px auto;
+}
+
+.Aboutus {
+    background-color: rgb(245, 239, 239);
+    border-radius: 0px 50px;
 }
 
 
@@ -102,13 +123,10 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-<<<<<<< HEAD
     color: rgb(14, 13, 13);
-=======
     background-color: #1f363d;
     /* green;*/
     color: white;
->>>>>>> 1c555558e0f84039ebd7b2f3f6367eba4e808139
     z-index: 1;
 }
 

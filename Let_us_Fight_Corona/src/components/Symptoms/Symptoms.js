@@ -11,15 +11,13 @@ function Symptoms ()
 
                 <div className="col-12">
                     <h3>Symptoms</h3>
-                    <hr />
                 </div>
             </div>
-            <div className="row row-content p-5 "  >
+            <div className="row row-content p-5  border border-blue "  >
                 <div className="symptoms " >
-                    <Link to="/process">Click to go to Process</Link>
-                    <h5>People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness.
-<p>
-                            Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:.
+                    <h5><p>People with COVID-19 have had a wide range of symptoms reported.
+                    Most infected people will develop mild to moderate illness and recover without hospitalization.
+                    Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:.
                       </p>
                         <ul>
                             <li>
@@ -44,11 +42,13 @@ function Symptoms ()
                         </ul>
                         <p>This list does not include all possible symptoms. We will continue to update this list as we learn more about COVID-19.</p>
                     </h5>
+                    <h4><Link to="/process">Click here to go to Process</Link></h4>
 
                 </div>
                 <div className="row justify-content justify-content-center">
                     <img src={ `${ s7 }` } width="100%" alt=" All Symptoms Together " />
                 </div>
+
             </div>
 
         </div>

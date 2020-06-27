@@ -11,7 +11,7 @@ const Card3 = () =>
 {
     return (
 
-        <div className="card mb-3" style={ { maxWidth: "540px" } }>
+        <div className="card ">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={ `${ maskwear }` } className="card-img" alt="maskwear" />
@@ -38,28 +38,30 @@ const Card3 = () =>
                     </ul>
 
                     <div className="tab-content">
-                        <div id="r1" className="container tab-pane active"><br />
+                        <div id="r1" className="container tab-pane active">
+
                             <h5>Non Medical Fabric Mask</h5>
-                            <div>
-                                <div><img src={ `${ Pic7 }` } width="500" height="400" alt="nonMedic MaskwearingTips Do" /></div><br />
-                                <div><img src={ `${ Pic8 }` } width="500" height="400" alt="nonMedic MaskwearingTips Dont" /></div>
-                            </div>
+
+                            <div><img src={ `${ Pic7 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Do" /></div><br />
+                            <div><img src={ `${ Pic8 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Dont" /></div>
+
+
                         </div>
                         <div id="r2" className="container tab-pane fade"><br />
                             <h5>Medical Mask</h5>
+
                             <div>
-                                <div>
-                                    <div><img src={ `${ Pic9 }` } width="500" height="400" alt="Medic MaskwearingTips Do" /></div><br />
-                                    <div><img src={ `${ Pic10 }` } width="500" height="400" alt="Medic MaskwearingTips Dont" /></div>
-                                </div>
+                                <div><img src={ `${ Pic9 }` } width="100%" height="100%" alt="Medic MaskwearingTips Do" /></div><br />
+                                <div><img src={ `${ Pic10 }` } width="100%" height="100%" alt="Medic MaskwearingTips Dont" /></div>
+
                             </div>
                         </div>
                         <div id="r3" className="container tab-pane fade"><br />
-                            <p>
-                                <h4>Remember: </h4><br />
-                                <h6>Even by following all previous rules and using mask correctky alone can't help you.For protecting you
+
+                            <h4>Remember: </h4><br />
+                            <h6>Even by following all previous rules and using mask correctly alone can't help you.For protecting you
                 from this virus You have to take all above precautions.</h6>
-                            </p>
+
                             <br />
                             <h5>For more info:</h5><br />
                             <h6>

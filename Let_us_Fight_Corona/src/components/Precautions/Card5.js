@@ -14,7 +14,7 @@ const Card5 = () =>
 
     return (
 
-        <div className="card mb-3" style={ { maxWidth: "540px" } }>
+        <div className="card " >
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={ `${ StayHome }` } className="card-img" alt="Stay Home" />
@@ -47,8 +47,8 @@ const Card5 = () =>
                         <div id="s1" className="container tab-pane active"><br />
                             <h5>#HealthyAtHome: Physical Avtivity</h5>
                             <div>
-                                <div><img src={ `${ Pic1 }` } width="500" height="400" alt="Tip1" /></div><br />
-                                <div><img src={ `${ Pic2 }` } width="500" height="400" alt="Tip2" /></div>
+                                <div><img src={ `${ Pic1 }` } width="100%" height="100%" alt="Tip1" /></div><br />
+                                <div><img src={ `${ Pic2 }` } width="100%" height="100%" alt="Tip2" /></div>
 
                             </div>
                         </div>
@@ -68,16 +68,16 @@ const Card5 = () =>
                                 </ul>
                             </div>
                             <div>
-                                <div><img src={ `${ Pic3 }` } width="500" height="400" alt="vegetable washing faq" /></div>
+                                <div><img src={ `${ Pic3 }` } width="100%" height="100%" alt="vegetable washing faq" /></div>
 
                             </div>
                         </div>
                         <div id="s3" className="container tab-pane fade"><br />
                             <h4>#HealthyAtHome: Mental Health</h4> <br />
                             <div>
-                                <div><img src={ `${ Pic4 }` } width="500" height="400" alt="Health worker" /></div><br />
-                                <div><img src={ `${ Pic5 }` } width="500" height="400" alt="Care" /></div>
-                                <div><img src={ `${ Pic6 }` } width="500" height="200" alt="Get the facts straight" /></div>
+                                <div><img src={ `${ Pic4 }` } width="100%" height="100%" alt="Health worker" /></div><br />
+                                <div><img src={ `${ Pic5 }` } width="100%" height="100%" alt="Care" /></div>
+                                <div><img src={ `${ Pic6 }` } width="100%" height="100%" alt="Get the facts straight" /></div>
                             </div>
 
                         </div>
