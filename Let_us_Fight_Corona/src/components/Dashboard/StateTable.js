@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from "./StateTable.module.css";
+import { Table } from "reactstrap";
+import StateTableRow from './StateTableRow';
 
 
 // Table for Daily State Data
@@ -53,8 +54,8 @@ class DashJS extends React.Component
                 <p />
                 <h3>  State and Union Territory Tabular Data</h3>
                 <div className="container-fluid">
-                    <table className="table ">
-                        <thead className="text-black-0 w-100">
+                    <Table>
+                        <thead>
                             <tr>
                                 <th>State </th>
                                 <th>Confirmed</th>
@@ -64,25 +65,22 @@ class DashJS extends React.Component
                         </thead>
 
                         <tbody>
-                            { data.map( stateinfo =>
-                            {
-                                const { statename, statecode, recovered, confirmed, deaths } = stateinfo;
-                                return (
-                                    <>
+                            { data.map( ( stateinfo, i ) =>
+                                (
+                                    <StateTableRow
+                                        key={ i }
+                                        statename={ stateinfo.statename }
+                                        confirmed={ stateinfo.confirmed }
+                                        recovered={ stateinfo.recovered }
+                                        deaths={ stateinfo.deaths }
 
-                                        <tr key={ statecode } className={ styles.statetablerow }>
-                                            <td >{ statename }</td>
-                                            <td >{ confirmed }</td>
-                                            <td>{ recovered }</td>
-                                            <td>{ deaths }</td>
-                                        </tr>
+                                    />
 
-                                    </>
-                                )
-                            } )
+
+                                ) )
                             }
                         </tbody>
-                    </table>
+                    </Table>
 
                 </div>
             </div>
