@@ -51,7 +51,8 @@ function About ()
                     (A volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India)
                     </li>
                             <li>Information regarding the Symptoms, Preventions ,etc is collected from :-</li>
-                            <li><a href=" ">World Health Organization( WHO )</a></li>
+                            <li><a href="https://www.mohfw.gov.in/ ">Ministry of Health and Family Welfare , Government of India</a></li>
+                            <li><a href=" https://www.who.int/">World Health Organization( WHO )</a></li>
                         </ul>
                     </h5>
                 </div>
