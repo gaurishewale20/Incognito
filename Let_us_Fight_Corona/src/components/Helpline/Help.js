@@ -5,6 +5,7 @@ import TableRow from './TableRow';
 import { HelplineNumbers } from '../../shared/helplinenumbers';
 import { Helplines } from '../../shared/helplines';
 import { MumbaiHelpline } from '../../shared/mumbaihelpline';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Help = () =>
 {
@@ -30,9 +31,12 @@ const Help = () =>
         <div className="help">
             <div className="container-fluid">
                 <div className={ styles.search_option }>
+                    <SearchIcon />
                     <input type="text" placeholder=" Search " onChange={ e => setSearch( e.target.value ) } />
 
                 </div>
+                <br />
+                <h4>Central Helpline Number : 1075 (Toll Free)</h4><hr />
                 <br />
                 <h4> State Helpline Numbers</h4><p />
                 <Table >

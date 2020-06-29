@@ -23,6 +23,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Footer from './FooterComponent';
+import ScrollToTop from './ScrollTotop';
 
 const drawerWidth = 240;
 
@@ -227,9 +228,9 @@ function ResponsiveDrawer ( props )
                 <div className={ classes.toolbar } />
                 <Typography component={ 'span' } varient={ 'body2' }>
                     <Home />
-
+                    <ScrollToTop />
+                    <Footer />
                 </Typography>
-                <Footer />
             </main>
 
 

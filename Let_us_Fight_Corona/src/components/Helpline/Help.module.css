@@ -4,17 +4,26 @@
       font-family: Arial;
   }*/
 
-input {
+.search_option {
     border: none;
     border-radius: 2rem;
     width: 15rem;
     height: 2.5rem;
     text-align: center;
-    box-shadow: 10px 5px 5px rgb(158, 155, 155);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(158, 155, 155);
     transition: all .5s;
 }
 
-input:hover {
+input {
+    border: none;
+    width: 10rem;
+    height: 1.5rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.search_option:hover {
     transform: scale(1.05);
 }
 

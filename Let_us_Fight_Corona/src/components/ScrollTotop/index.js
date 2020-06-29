@@ -26,9 +26,10 @@ const ScrollToTop = () =>
 
     window.addEventListener( 'scroll', checkScrollTop )
 
-    return ( <div className="scroll-to-top">
-        <KeyboardArrowUpIcon className="scrollTop" onClick={ scrollTop } style={ { height: 40, display: showScroll ? 'flex' : 'none' } } />
-    </div>
+    return (
+        <div className="scrollTop" onClick={ scrollTop } style={ { display: showScroll ? 'flex' : 'none' } } >
+            <KeyboardArrowUpIcon />
+        </div>
     );
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import AccordionFAQ from '../AccordionFAQ/AccordionFAQ';
-import ScrollToTop from '../ScrollTotop';
 import { Link } from 'react-router-dom';
 import "./faqs.css";
 
@@ -125,7 +124,7 @@ const FAQs = () =>
                 </div>
 
             </div>
-            <ScrollToTop />
+
             <br />
         </div>
 
