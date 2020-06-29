@@ -1,48 +1,60 @@
-.card {
-    float: horizonal;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-    max-width: 400px;
-    margin: auto;
+                        .card {
+                            float: horizonal;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+                            max-width: 400px;
+                            margin: auto;
+                            text-align: center;
+                            transition: .3s;
+                            font-family: Arial;
+                            border-radius: 5px;
+                            background-color: white;
+                        }
+                        /*.img1 {
     text-align: center;
-    transition: .3s;
-    font-family: Arial;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-}
-
-.container {
-    padding: 2px 16px;
-}
-
-.text {
-    font-size: medium;
-    font-family: sans-serif;
-}
-
-.block {
     display: block;
-    border: #33cca6;
-    outline: 0;
-    padding: 14px;
-    color: white;
-    background-color: #33cca6;
-    text-align: center;
-    cursor: pointer;
+    justify-content: center;
+    align-items: left;
+    margin: auto;
     width: 100%;
-    font-family: sans-serif;
-    font-size: 18px;
-}
-
-.button:hover {
-    opacity: .5;
-}
-
-
-/*
+}*/
+                        
+                        .responsive {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .card:hover {
+                            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+                        }
+                        
+                        .container {
+                            padding: 2px 16px;
+                        }
+                        
+                        .text {
+                            font-size: medium;
+                            font-family: sans-serif;
+                        }
+                        
+                        .block {
+                            display: block;
+                            border: #33cca6;
+                            outline: 0;
+                            padding: 14px;
+                            color: white;
+                            background-color: #33cca6;
+                            text-align: center;
+                            cursor: pointer;
+                            width: 100%;
+                            font-family: sans-serif;
+                            font-size: 18px;
+                        }
+                        
+                        .button:hover {
+                            opacity: .5;
+                        }
+                        /*
 table,
 th,
 td {
@@ -51,18 +63,34 @@ td {
     align-items: center;
 }
 */
-
-.icon {
-    height: 40px;
-    width: 40px;
-    display: block;
-    /* Other styles here */
-}
-
-.diet {
-    text-align: left;
-}
-
-.head {
-    text-align: center;
-}
+                        
+                        .icon {
+                            height: 40px;
+                            width: 40px;
+                            display: block;
+                            /* Other styles here */
+                        }
+                        
+                        .diet {
+                            text-align: left;
+                        }
+                        
+                        .head {
+                            text-align: center;
+                        }
+                        
+                        .tab-content {
+                            background-color: white;
+                        }
+                        
+                        @media only screen and (max-width: 710px) {
+                            .responsive {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                margin-right: 3em;
+                                margin-left: -0.5em;
+                                padding-right: 2.0em;
+                                margin-bottom: 0.35em;
+                            }
+                        }

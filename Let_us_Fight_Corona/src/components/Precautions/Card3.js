@@ -11,7 +11,7 @@ const Card3 = () =>
 {
     return (
 
-        <div className="card ">
+        <div className="card">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={ `${ maskwear }` } className="card-img" alt="maskwear" />
@@ -40,31 +40,31 @@ const Card3 = () =>
                     <div className="tab-content">
                         <div id="r1" className="container tab-pane active">
 
-                            <h5>Non Medical Fabric Mask</h5>
+                            <h5 className='responsive'>Non Medical Fabric Mask</h5>
 
-                            <div><img src={ `${ Pic7 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Do" /></div><br />
-                            <div><img src={ `${ Pic8 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Dont" /></div>
+                            <div className='responsive'><img src={ `${ Pic7 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Do" /></div><br />
+                            <div className='responsive'><img src={ `${ Pic8 }` } width="100%" height="100%" alt="nonMedic MaskwearingTips Dont" /></div>
 
 
                         </div>
                         <div id="r2" className="container tab-pane fade"><br />
-                            <h5>Medical Mask</h5>
+                            <h5 className='responsive'>Medical Mask</h5>
 
                             <div>
-                                <div><img src={ `${ Pic9 }` } width="100%" height="100%" alt="Medic MaskwearingTips Do" /></div><br />
-                                <div><img src={ `${ Pic10 }` } width="100%" height="100%" alt="Medic MaskwearingTips Dont" /></div>
+                                <div className='responsive'><img src={ `${ Pic9 }` } width="100%" height="100%" alt="Medic MaskwearingTips Do" /></div><br />
+                                <div className='responsive'><img src={ `${ Pic10 }` } width="100%" height="100%" alt="Medic MaskwearingTips Dont" /></div>
 
                             </div>
                         </div>
                         <div id="r3" className="container tab-pane fade"><br />
 
-                            <h4>Remember: </h4><br />
-                            <h6>Even by following all previous rules and using mask correctly alone can't help you.For protecting you
+                            <h4 className='responsive'>Remember: </h4><br />
+                            <h6 className='responsive'>Even by following all previous rules and using mask correctly alone can't help you. For protecting you
                 from this virus You have to take all above precautions.</h6>
 
                             <br />
-                            <h5>For more info:</h5><br />
-                            <h6>
+                            <h5 className='responsive'>For more info:</h5><br />
+                            <h6 className='responsive'>
                                 <ul className="diet">Detailed Videos:
                 <li><a href="https://www.youtube.com/watch?time_continue=129&v=9Tv2BVN_WTk&feature=emb_logo">WHO(World
                     Health Organization)_1</a></li>
