@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Cards, CountryPicker, Chart } from '../../components';
 import { fetchData, fetchCountries, fetchTotalData } from '../../api';
@@ -13,9 +14,11 @@ class StateChart extends React.Component
 
     async componentDidMount ()
     {
+
         const data = await fetchData();
         //this.setState({ data });
         // console.log( data );
+
 
         const country_data = await fetchCountries();
         //console.log( country_data );

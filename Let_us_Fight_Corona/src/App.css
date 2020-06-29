@@ -41,7 +41,7 @@ body {
     padding: 30px;
     background: linear-gradient(rgb(192, 211, 192), rgb(203, 232, 240), rgb(205, 221, 204));
     box-sizing: border-box;
-    background-color: #060e11/*#f0ffff;*/
+    /* background-color: #060e11#f0ffff;*/
 }
 
 .container {
