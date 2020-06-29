@@ -115,6 +115,8 @@ body {
     min-height: 400px;
 }*/
 
+
+/*
 .scroll-to-top {
     position: fixed;
     bottom: 12px;
@@ -125,7 +127,7 @@ body {
     border-radius: 100%;
     color: rgb(14, 13, 13);
     background-color: #1f363d;
-    /* green;*/
+    /* green;
     color: white;
     z-index: 1;
 }
@@ -141,5 +143,33 @@ body {
     }
     to {
         transform: translateY(-1px);
+    }
+}
+*/
+
+.scrollTop {
+    position: fixed;
+    width: 100%;
+    bottom: 10rem;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+}
+
+.scrollTop:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
     }
 }
