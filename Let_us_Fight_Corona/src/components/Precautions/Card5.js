@@ -33,10 +33,10 @@ const Card5 = () =>
                 <div id="demo3" className="collapse">
                     <ul className="nav nav-tabs" role="tablist">
                         <li className="nav-item">
-                            <a className="nav-link active" data-toggle="tab" href="#s1">Mantra 1</a>
+                            <a className="nav-link active " data-toggle="tab" href="#s1">Mantra 1</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" data-toggle="tab" href="#s2">Mantra 2</a>
+                            <a className="nav-link " data-toggle="tab" href="#s2">Mantra 2</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" data-toggle="tab" href="#s3">Mantra 3</a>
@@ -45,17 +45,17 @@ const Card5 = () =>
 
                     <div className="tab-content">
                         <div id="s1" className="container tab-pane active"><br />
-                            <h5>#HealthyAtHome: Physical Avtivity</h5>
+                            <h5 className='responsive'>#HealthyAtHome: Physical Avtivity</h5>
                             <div>
-                                <div><img src={ `${ Pic1 }` } width="100%" height="100%" alt="Tip1" /></div><br />
-                                <div><img src={ `${ Pic2 }` } width="100%" height="100%" alt="Tip2" /></div>
+                                <div className='responsive'><img src={ `${ Pic1 }` } width="100%" height="100%" alt="Tip1" /></div><br />
+                                <div className='responsive'><img src={ `${ Pic2 }` } width="100%" height="100%" alt="Tip2" /></div>
 
                             </div>
                         </div>
                         <div id="s2" className="container tab-pane fade"><br />
-                            <h4>#HealthyAtHome: Healthy Diet</h4>
+                            <h4 className='responsive'>#HealthyAtHome: Healthy Diet</h4>
                             <br />
-                            <h5>Tips for maintaining a Healthy Diet:</h5>
+                            <h5 className='responsive'>Tips for maintaining a Healthy Diet:</h5>
                             <div>
                                 <ul className="diet">
                                     <li> Eat a variety of food, including fruits and vegetables</li>
@@ -68,16 +68,16 @@ const Card5 = () =>
                                 </ul>
                             </div>
                             <div>
-                                <div><img src={ `${ Pic3 }` } width="100%" height="100%" alt="vegetable washing faq" /></div>
+                                <div className='responsive'><img src={ `${ Pic3 }` } width="100%" height="100%" alt="vegetable washing faq" /></div>
 
                             </div>
                         </div>
                         <div id="s3" className="container tab-pane fade"><br />
-                            <h4>#HealthyAtHome: Mental Health</h4> <br />
+                            <h4 className='responsive'>#HealthyAtHome: Mental Health</h4> <br />
                             <div>
-                                <div><img src={ `${ Pic4 }` } width="100%" height="100%" alt="Health worker" /></div><br />
-                                <div><img src={ `${ Pic5 }` } width="100%" height="100%" alt="Care" /></div>
-                                <div><img src={ `${ Pic6 }` } width="100%" height="100%" alt="Get the facts straight" /></div>
+                                <div className='responsive'><img src={ `${ Pic4 }` } width="100%" height="100%" alt="Health worker" /></div><br />
+                                <div className='responsive'><img src={ `${ Pic5 }` } width="100%" height="100%" alt="Care" /></div>
+                                <div className='responsive'><img src={ `${ Pic6 }` } width="100%" height="100%" alt="Get the facts straight" /></div>
                             </div>
 
                         </div>
