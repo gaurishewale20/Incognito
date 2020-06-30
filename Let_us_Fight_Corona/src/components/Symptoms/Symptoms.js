@@ -19,27 +19,35 @@ function Symptoms ()
                     Most infected people will develop mild to moderate illness and recover without hospitalization.
                     Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:.
                       </p>
-                        <ul>
-                            <li>
-                                Fever or chills
+                        <ul type="none">
+                            <li><strong>Most Common Symptoms:</strong></li>
+                            <ul type="square">
+                                <li>
+                                    Fever or chills
                         </li>
-                            <li>
-                                Cough
+                                <li>
+                                    Dry Cough
                         </li>
-                            <li>
-                                Shortness of breath or difficulty breathing
+
+                                <li>
+                                    Tiredness
                         </li>
-                            <li>
-                                Fatigue (Tiredness)
-                        </li>
-                            <li>Muscle or body aches</li>
-                            <li>Headache</li>
-                            <li>New loss of taste or smell</li>
-                            <li>Sore throat</li>
-                            <li>Congestion or runny nose</li>
-                            <li>Nausea or vomiting</li>
-                            <li>Diarrhea</li>
+                            </ul><br />
+                            <li><strong>Less Common Symptoms:</strong></li>
+                            <ul type="square">
+                                <li>Muscle or body aches</li>
+                                <li>Shortness of Breath</li>
+                                <li>Headache</li>
+                                <li> Loss of taste or smell</li>
+                                <li>Sore throat</li>
+                                <li>Congestion or runny nose</li>
+                                <li>Nausea or vomiting</li>
+                                <li>Diarrhea</li>
+                                <li>Conjunctivitis</li>
+                                <li>A rash on skin, or discolouration of fingers or toes</li>
+                            </ul>
                         </ul>
+
                         <p>This list does not include all possible symptoms. We will continue to update this list as we learn more about COVID-19.</p>
                     </h5>
                     <h4><Link to="/process">Click here to go to Process</Link></h4>

@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles( ( theme ) => ( {
     root: {
         width: '100%',
+
     },
     button: {
         marginTop: theme.spacing( 1 ),
@@ -86,9 +87,9 @@ export default function Process ()
                 <Stepper activeStep={ activeStep } orientation="vertical">
                     { steps.map( ( label, index ) => (
                         <Step key={ label }>
-                            <StepLabel>{ label }</StepLabel>
+                            <StepLabel><h5>{ label }</h5></StepLabel>
                             <StepContent>
-                                <Typography>{ getStepContent( index ) }</Typography>
+                                <Typography><h6>{ getStepContent( index ) }</h6></Typography>
                                 <div className={ classes.actionsContainer }>
                                     <div>
                                         <Button
@@ -114,13 +115,14 @@ export default function Process ()
                 </Stepper>
                 { activeStep === steps.length && (
                     <Paper square elevation={ 0 } className={ classes.resetContainer }>
-                        <Typography>All steps completed - We hope that you found this information helpful.</Typography>
+                        <Typography><h5>All steps completed - We hope that you found this information helpful.</h5></Typography>
                         <Button onClick={ handleReset } className={ classes.button }>
-                            Read Again
-          </Button>
+                            <h6> Read Again</h6>
+                        </Button>
                     </Paper>
                 ) }
             </div>
+            <br />
         </div>
     );
 }

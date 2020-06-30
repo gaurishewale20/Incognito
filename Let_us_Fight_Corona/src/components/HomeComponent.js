@@ -17,7 +17,7 @@ import Prevention from './../image/gifs/prevention.gif';
 import Mask1 from './../image/images/mask1.jpg';
 import help from './../image/gifs/support.gif';
 import Process from './Procedure/Process';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+//import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class Home extends Component
 {
@@ -58,32 +58,22 @@ class Home extends Component
 
         // Specifying the routes for our various pages
         return (
-            <Route render={ ( { location } ) => (
-                <TransitionGroup>
-                    <CSSTransition
-                        key={ location.key }
-                        timeout={ 450 }
-                        classNames="fade">
 
-                        <Switch location={ location }>
-                            <Route path='/home' component={ HomePage } />
-                            <Route exact path="/dashboard" component={ () => <Dashboard /> } />
-                            <Route exact path="/test" component={ () => <Test /> } />
-                            <Route exact path="/result" component={ () => <Result /> } />
-                            <Route exact path="/faqs" component={ () => <FAQs /> } />
-                            <Route exact path="/symptoms" component={ () => <Symptoms /> } />
-                            <Route exact path="/precautions" component={ () => <Precautions /> } />
-                            <Route exact path="/process" component={ () => <Process /> } />
+            <Switch >
+                <Route path='/home' component={ HomePage } />
+                <Route exact path="/dashboard" component={ () => <Dashboard /> } />
+                <Route exact path="/test" component={ () => <Test /> } />
+                <Route exact path="/result" component={ () => <Result /> } />
+                <Route exact path="/faqs" component={ () => <FAQs /> } />
+                <Route exact path="/symptoms" component={ () => <Symptoms /> } />
+                <Route exact path="/precautions" component={ () => <Precautions /> } />
+                <Route exact path="/process" component={ () => <Process /> } />
 
-                            <Route exact path="/help" component={ () => <Help /> } />
-                            <Route exact path="/essentials" component={ () => <Essentials /> } />
-                            <Route exact path="/aboutus" component={ () => <About /> } />
-                            <Redirect to="/home" />
-                        </Switch>
-                    </CSSTransition>
-                </TransitionGroup>
-
-            ) } />
+                <Route exact path="/help" component={ () => <Help /> } />
+                <Route exact path="/essentials" component={ () => <Essentials /> } />
+                <Route exact path="/aboutus" component={ () => <About /> } />
+                <Redirect to="/home" />
+            </Switch>
 
 
         );

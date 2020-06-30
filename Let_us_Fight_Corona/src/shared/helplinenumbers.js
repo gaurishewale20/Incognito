@@ -81,7 +81,7 @@ export const HelplineNumbers = [{
 }, {
     id: 21,
     statename: "Rajasthan",
-    helplinenumber: "0141-225624",
+    helplinenumber: "0141-2225624",
 }, {
     id: 22,
     statename: "Sikkim ",
@@ -89,7 +89,7 @@ export const HelplineNumbers = [{
 }, {
     id: 23,
     statename: "Tamil Nadu",
-    helplinenumber: "044-2910500",
+    helplinenumber: "044-29510500",
 }, {
     id: 24,
     statename: "Telangana",

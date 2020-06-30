@@ -2,7 +2,7 @@
 export const Helplines = [{
         id: 1,
         ut: "Andaman and Nicobar island",
-        helpline: "03192-23102"
+        helpline: "03192-232102"
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ export const Helplines = [{
     },
     {
         id: 8,
-        ut: "Punducheery ",
+        ut: "Puducheery ",
         helpline: 104
     }
 

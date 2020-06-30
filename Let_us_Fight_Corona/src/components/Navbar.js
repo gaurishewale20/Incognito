@@ -19,6 +19,8 @@ import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Link, NavLink } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
+import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
+import SecurityOutlinedIcon from '@material-ui/icons/SecurityOutlined';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -134,6 +136,16 @@ function ResponsiveDrawer ( props )
                     <Link to="/dashboard"><ListItemIcon>{ <DashboardIcon /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./dashboard' >
                         <ListItemText primary="Dashboard" /></NavLink>
+                </ListItem>
+                <ListItem button key="Symptoms">
+                    <Link to="/symptoms"><ListItemIcon>{ <WbSunnyOutlinedIcon /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./symptoms' >
+                        <ListItemText primary="Symptoms" /></NavLink>
+                </ListItem>
+                <ListItem button key="Precautions">
+                    <Link to="/precautions"><ListItemIcon>{ <SecurityOutlinedIcon /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./Precautions' >
+                        <ListItemText primary="Precautions" /></NavLink>
                 </ListItem>
                 <ListItem button key="Test">
 

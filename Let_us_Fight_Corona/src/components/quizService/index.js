@@ -1,7 +1,7 @@
 //QuestionBank for test
 const qBank = [{
         id: 0,
-        question: "Are you experiencing any of following symptoms?  (Cough,Fever,Difficulty in breathing)",
+        question: "Are you experiencing any of following symptoms?  (Cough,Fever,Difficulty in breathing/Tiredness)",
         correct: "Yes",
         options: [
             "Yes",

@@ -1,5 +1,4 @@
 import React from "react";
-//import docR from "./../image/images/doc1.jpg"
 function Result ( { score, Retake } )
 {
     var message;

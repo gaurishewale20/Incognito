@@ -5,7 +5,7 @@ function LoadingPage ()
 {
     return (
         <div className="container-fluid d-flex justify-content-center align-content-center">
-            < Block color="#7cbef8" size="80px" /></div>
+            < Block color="#7cbef8" size="80px" duration="1s" /></div>
     );
 
 }

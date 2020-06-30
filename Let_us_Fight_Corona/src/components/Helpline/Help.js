@@ -36,7 +36,7 @@ const Help = () =>
 
                 </div>
                 <br />
-                <h4>Central Helpline Number : 1075 (Toll Free)</h4><hr />
+                <h4>Central Helpline Number : +91-11-23978046</h4><hr />
                 <br />
                 <h4> State Helpline Numbers</h4><p />
                 <Table >
