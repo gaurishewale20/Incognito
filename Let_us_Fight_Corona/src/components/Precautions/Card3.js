@@ -20,10 +20,10 @@ const Card3 = () =>
                     <div className="card-body">
                         <h5 className="card-title">Wear a Face Mask</h5>
                         <hr />
-                        <p className="card-text">By wearing a face mask it covers your Nose, Mouth.Thus prevents virus from entering your body.</p>
+                        <p className="card-text">Wearing a face mask covers your nose and mouth. This prevents the virus from entering your body.</p>
                     </div>
                 </div>
-                <button type="button" className="block" data-toggle="collapse" data-target="#demo2">Follow this instruction to wear it correctly</button>
+                <button type="button" className="block" data-toggle="collapse" data-target="#demo2">Follow these instructions to wear it correctly</button>
                 <div id="demo2" className="collapse">
                     <ul className="nav nav-tabs" role="tablist">
                         <li className="nav-item">
@@ -59,8 +59,8 @@ const Card3 = () =>
                         <div id="r3" className="container tab-pane fade"><br />
 
                             <h4 className='responsive'>Remember: </h4><br />
-                            <h6 className='responsive'>Even by following all previous rules and using mask correctly alone can't help you. For protecting you
-                from this virus You have to take all above precautions.</h6>
+                            <h6 className='responsive'>Even following all the given rules and wearing the mask correctly can't help you on its own. For protecting yourself
+                from this virus you have to take all the above precautions.</h6>
 
                             <br />
                             <h5 className='responsive'>For more info:</h5><br />
