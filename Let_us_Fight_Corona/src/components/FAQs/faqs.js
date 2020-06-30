@@ -3,7 +3,8 @@ import AccordionFAQ from '../AccordionFAQ/AccordionFAQ';
 import { Link } from 'react-router-dom';
 import "./faqs.css";
 
-const FAQs = () => {
+const FAQs = () =>
+{
     return (
         <div className="container-fluid">
             <div className="row">
@@ -41,7 +42,7 @@ const FAQs = () => {
                     <br /><hr />
                     <div id="section3" >
                         <h4 className="sectiontitle">COVID-19</h4>
-                        <AccordionFAQ title="What is Covid-19 ?"
+                        <AccordionFAQ title="What is COVID-19 ?"
                             content="COVID-19 is an infectious disease caused by the most recently discovered coron
                     a virus. This new virus and disease were unknown befo
                     re the outbreak began in Wuhan, China, in December 2019."/>

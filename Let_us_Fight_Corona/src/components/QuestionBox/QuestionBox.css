@@ -68,6 +68,6 @@
     margin: auto;
     border: none;
     outline: none;
-    box-shadow: 2px 3px 2px rgb(184, 180, 180);
+    box-shadow: 2px 3px 5px rgb(184, 180, 180);
     cursor: pointer;
 }
