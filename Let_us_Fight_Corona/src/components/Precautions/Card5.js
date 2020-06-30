@@ -24,8 +24,8 @@ const Card5 = () =>
                         <h5 className="card-title">Stay Home, Stay Safe</h5>
                         <hr />
                         <br />
-                        <p className="card-text">Home is the safest place to protect you from corona virus, as it prevents you from
-                        exposure to virus.If you are not feeling well, then you should strictly stay at home and take advise from doctor.</p>
+                        <p className="card-text">Home is the safest place to protect you from the corona virus, as it prevents you from
+                        exposure to virus. If you are not feeling well, then you should strictly stay at home and take advice from a doctor.</p>
 
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const Card5 = () =>
 
                     <div className="tab-content">
                         <div id="s1" className="container tab-pane active"><br />
-                            <h5 className='responsive'>#HealthyAtHome: Physical Avtivity</h5>
+                            <h5 className='responsive'>#HealthyAtHome: Physical Activity</h5>
                             <div>
                                 <div className='responsive'><img src={ `${ Pic1 }` } width="100%" height="100%" alt="Tip1" /></div><br />
                                 <div className='responsive'><img src={ `${ Pic2 }` } width="100%" height="100%" alt="Tip2" /></div>
@@ -60,7 +60,7 @@ const Card5 = () =>
                                 <ul className="diet">
                                     <li> Eat a variety of food, including fruits and vegetables</li>
                                     <li> Cut back on salt</li>
-                                    <li> Eat moderate amounts of fats and oils</li>
+                                    <li> Eat moderate amounts of fat and oil</li>
                                     <li> Limit sugar intake</li>
                                     <li> Stay hydrated: Drink enough water</li>
                                     <li> Avoid hazardous and harmful alcohol use</li>

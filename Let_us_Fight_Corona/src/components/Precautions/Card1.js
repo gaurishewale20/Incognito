@@ -17,14 +17,14 @@ const Card1 = () =>
                     <div className="card-body">
                         <h5 className="card-title">WASH hands often</h5>
                         <hr />
-                        <p className="card-text">It is very important to clean your hands for 20 sec, after every 30 minutes. For washing
-                your hands, you can use soap and water,or an alocohol-based sanitizer.</p>
+                        <p className="card-text">It is very important to clean your hands for a duration of 20 sec, after every 30 minutes. For washing
+                your hands, you can use soap and water, or an alcohol-based sanitizer.</p>
 
                     </div>
                 </div>
 
-                <button type="button" className="block" data-toggle="collapse" data-target="#demo1">See here the correct
-            procedure to wash hands</button>
+                <button type="button" className="block" data-toggle="collapse" data-target="#demo1">View the correct
+            procedure to wash hands here</button>
                 <div id="demo1" className="collapse">
                     <br />
                     <div><img src={ `${ Pic11 }` } width="100%" height="100%" alt="Procedure to wash hands properly" /></div>

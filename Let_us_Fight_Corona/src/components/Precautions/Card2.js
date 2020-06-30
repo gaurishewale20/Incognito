@@ -15,8 +15,8 @@ const Card2 = () =>
                     <div className="card-body">
                         <h5 className="card-title">Don't touch your face</h5>
                         <hr />
-                        <p className="card-text">To help in preventing infection, keep your hands away from your eyes, nose and mouth.As
-            touching your dirty hands to this part allows virus to enter into your body.</p>
+                        <p className="card-text">To prevent infection, keep your hands away from your eyes, nose and mouth. As
+            touching your dirty hands to this part allows the virus to enter your body.</p>
                     </div>
                 </div>
             </div>
