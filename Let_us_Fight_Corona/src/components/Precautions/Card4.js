@@ -5,7 +5,7 @@ const Card4 = () =>
 {
     return (
         <div className="card " >
-            <div className="row no-gutters">
+            <div className="row ">
                 <div className="col-md-4">
                     <img src={ `${ SocialDistance }` } className="card-img" alt="Social Distance" />
                 </div>

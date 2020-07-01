@@ -240,7 +240,7 @@ function ResponsiveDrawer ( props )
                 <div className={ classes.toolbar } />
                 <Typography component={ 'span' } varient={ 'body2' }>
                     <Home />
-                    <ScrollToTop />
+                    <ScrollToTop /><br />
                     <Footer />
                 </Typography>
             </main>

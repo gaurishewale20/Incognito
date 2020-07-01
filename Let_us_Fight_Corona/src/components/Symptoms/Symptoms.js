@@ -53,7 +53,7 @@ function Symptoms ()
                     <h4><Link to="/process">Click here to go to Process</Link></h4>
 
                 </div>
-                <div className="row justify-content justify-content-center">
+                <div className="row d-block align-items-center">
                     <img src={ `${ s7 }` } width="100%" alt=" All Symptoms Together " />
                 </div>
 

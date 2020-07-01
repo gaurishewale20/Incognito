@@ -15,7 +15,7 @@ const Card5 = () =>
     return (
 
         <div className="card " >
-            <div className="row no-gutters">
+            <div className="row ">
                 <div className="col-md-4">
                     <img src={ `${ StayHome }` } className="card-img" alt="Stay Home" />
                 </div>

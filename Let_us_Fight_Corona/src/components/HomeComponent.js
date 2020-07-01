@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import About from '../components/AboutComponent/AboutComponent';
+import Resources from '../components/AboutComponent/Resources';
+import Credits from '../components/AboutComponent/Credits';
+
 import Test from './Test';
 import Result from './Result';
 import FAQs from './FAQs/faqs';
@@ -17,7 +20,6 @@ import Prevention from './../image/gifs/prevention.gif';
 import Mask1 from './../image/images/mask1.jpg';
 import help from './../image/gifs/support.gif';
 import Process from './Procedure/Process';
-//import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class Home extends Component
 {
@@ -38,7 +40,7 @@ class Home extends Component
             ];
             //  const { classes } = this.props;
             return (
-                <div className="home container-fluid ">
+                <div className=" container-fluid ">
                     <div className="row">
                         { gifIcons.map( ( s, i ) => (
                             <Cards
@@ -51,6 +53,7 @@ class Home extends Component
                         ) ) }
 
                     </div>
+
 
                 </div>
             );
@@ -72,6 +75,8 @@ class Home extends Component
                 <Route exact path="/help" component={ () => <Help /> } />
                 <Route exact path="/essentials" component={ () => <Essentials /> } />
                 <Route exact path="/aboutus" component={ () => <About /> } />
+                <Route exact path="/credits" component={ () => <Credits /> } />
+                <Route exact path="/resources" component={ () => <Resources /> } />
                 <Redirect to="/home" />
             </Switch>
 

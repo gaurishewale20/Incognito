@@ -6,32 +6,6 @@ body {
     box-sizing: inherit;
 }
 
-.page {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-}
-
-.fade-appear .fade-enter {
-    opacity: 0;
-    z-index: 1;
-}
-
-.fade-appear-active .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms linear 150ms;
-}
-
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-    opacity: 0;
-    transition: opacity 150ms linear;
-}
-
 
 /* background-color: rgb(192, 191, 192);8*/
 
@@ -40,7 +14,6 @@ body {
     margin: 0;
     border-radius: 10px;
     padding: 30px;
-    background: linear-gradient(rgb(192, 211, 192), rgb(203, 232, 240), rgb(205, 221, 204));
     box-sizing: border-box;
     /* background-color: #060e11#f0ffff;*/
 }
@@ -85,12 +58,15 @@ body {
 
 .footer {
     /*background-color: #ccffcc; */
-    margin-top: 5px 0px 0px 0px;
-    padding: 20px 0px 20px 0px;
+    margin-bottom: -50px;
+    margin-right: -1.51rem;
+    margin-left: -1.5rem;
+    padding: 20px;
     bottom: 0;
     border: none;
-    background-color: #414b4e;
-    background: linear-gradient(60deg, #414b4e 0%, #d3d8da 100%);
+    background-color: #4b5153;
+    color: #e4e4e7;
+    /*background: linear-gradient(60deg, #414b4e 0%, #d3d8da 100%);*/
 }
 
 .row-header {
@@ -98,7 +74,9 @@ body {
     padding: 0px auto;
 }
 
-.Aboutus {
+.Aboutus,
+.Resources,
+.Credits {
     background-color: rgb(245, 239, 239);
     border-radius: 0px 50px;
 }

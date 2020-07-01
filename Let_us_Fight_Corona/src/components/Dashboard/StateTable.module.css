@@ -1,4 +1,12 @@
 .statetablerow:nth-child(odd) {
+    /* 1 background-color: #1e5c53 */
+    background-color: #e7ebf0;
+    /* green; */
+    color: rgb(12, 12, 12);
+    font-family: Arial;
+}
+
+.statetablerow:hover {
     background-color: #4c7b8a;
     /*#0d0d50*/
     color: #fff;

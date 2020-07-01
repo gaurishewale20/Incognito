@@ -12,7 +12,7 @@ const Card3 = () =>
     return (
 
         <div className="card">
-            <div className="row no-gutters">
+            <div className="row">
                 <div className="col-md-4">
                     <img src={ `${ maskwear }` } className="card-img" alt="maskwear" />
                 </div>

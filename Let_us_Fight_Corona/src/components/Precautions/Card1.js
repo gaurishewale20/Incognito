@@ -9,7 +9,7 @@ const Card1 = () =>
     return (
         //Card1
         <div className="card ">
-            <div className="row no-gutters">
+            <div className="row ">
                 <div className="col-md-4">
                     <img src={ `${ cleanhands }` } className="card-img" alt="clean hands" />
                 </div>

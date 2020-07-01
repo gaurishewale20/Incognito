@@ -5,7 +5,7 @@ function About ()
     return (
         <div className="container-fluid">
 
-            <div className=" Aboutus row row-content p-5"  >
+            <div className=" Aboutus row row-content p-4"  >
 
 
 
@@ -44,34 +44,7 @@ function About ()
 
                 </div>
 
-                <div className="resources">
-                    <br />
-                    <h4>RESOURCES</h4>
-                    <hr />
-                    <h5>
 
-                        <p >
-                            The Daily Data displayed on this website is used from this
-                    <a href="https://api.covid19india.org/"> API.</a>
-                    (A volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India)
-                    </p>
-                            Information regarding the Symptoms, Preventions ,etc is collected from :-
-                            <ul>
-                            <li><a href="https://www.mohfw.gov.in/ ">Ministry of Health and Family Welfare , Government of India</a></li>
-                            <li><a href=" https://www.who.int/">World Health Organization( WHO )</a></li>
-                        </ul>
-                    </h5>
-                </div>
-                <div className="credits">
-                    <p />
-                    <h4>CREDITS</h4>
-                    <hr />
-                    <h5>Inspired from the project <a href="https://covid19india.org">covid19india.org</a></h5><br />
-                    <h4>Special Thanks to -
-                    <ul type="none">
-                            <li>COC VJTI,Mumbai</li>
-                        </ul></h4>
-                </div>
             </div>
             <p />
 
@@ -79,4 +52,4 @@ function About ()
     );
 }
 
-export default About;    
+export default About; 

@@ -10,7 +10,7 @@ import "../styles/card-style.css";
 function Cards ( { title, src, classes, content, link } )
 {
     return (
-        <div className="homecards col-md-6">
+        <div className="homecards col-md-6  ">
             <Link className="tags"
                 style={ {
                     color: "default",
@@ -22,11 +22,11 @@ function Cards ( { title, src, classes, content, link } )
                     </div>
                     <div className="card-body text-dark">
                         <h4 className="card-title">{ title }</h4>
-                        <p className="card-text text-secondary">{ content }</p>
+                        <p className="card-text text-success">{ content }</p>
                     </div>
                 </div>
             </Link>
-            <p />
+            <br />
         </div>
 
     );
