@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+/*@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
     font-family: "Roboto", sans-serif;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+    font-family: "Lato", sans-serif;
 }
 
 .question {
