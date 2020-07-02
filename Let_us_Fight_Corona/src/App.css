@@ -58,11 +58,11 @@ body {
 
 .footer {
     /*background-color: #ccffcc; */
+    top: 100%;
     margin-bottom: -50px;
     margin-right: -1.51rem;
     margin-left: -1.5rem;
     padding: 20px;
-    bottom: 0;
     border: none;
     background-color: #4b5153;
     color: #e4e4e7;

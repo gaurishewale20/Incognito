@@ -17,7 +17,7 @@ function Symptoms ()
                 <div className="symptoms " >
                     <h5><p>People with COVID-19 have had a wide range of symptoms reported.
                     Most infected people will develop mild to moderate illness and recover without hospitalization.
-                    Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:.
+                    Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19 :
                       </p>
                         <ul type="none">
                             <li><strong>Most Common Symptoms:</strong></li>

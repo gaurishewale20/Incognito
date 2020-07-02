@@ -8,15 +8,15 @@ function Result ( { score, Retake } )
     }
     else if ( `${ score }` < 2 )
     {
-        message = "You are at low risk. Take Care and Stay at home. ";
+        message = "You are at low risk. Take care and stay at home. ";
     }
     else if ( `${ score }` < 3 ) 
     {
-        message = "You are at risk. Take Care and Stay at home.";
+        message = "You are at risk. Take care and stay at home. Consult doctor.";
     }
     else 
     {
-        message = "You are at high risk. Take Care and Stay at home. Consult Doctor immediately.";
+        message = "You are at high risk. Take care and stay at home. Consult doctor immediately.";
     }
     return (
         <div className="score-board  p-5">
