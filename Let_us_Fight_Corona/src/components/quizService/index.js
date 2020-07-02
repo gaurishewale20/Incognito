@@ -1,7 +1,7 @@
 //QuestionBank for test
 const qBank = [{
         id: 0,
-        question: "Are you experiencing any of following symptoms?  (Cough,Fever,Difficulty in breathing/Tiredness)",
+        question: "Are you experiencing any of following symptoms?  (Cough, Fever, Difficulty in breathing, Exhaustion)",
         correct: "Yes",
         options: [
             "Yes",
@@ -10,7 +10,7 @@ const qBank = [{
     },
     {
         id: 1,
-        question: "Have you ever had any of the following? (Diabetes /Hypertension /Lung Disease /Heart Disease )",
+        question: "Have you ever had any of the following? (Diabetes / Hypertension / Lung Disease / Heart Disease )",
         correct: "Yes",
         options: [
             "Yes",
@@ -20,7 +20,7 @@ const qBank = [{
     },
     {
         id: 2,
-        question: "Have you ever traveled anywhere internationally in last 28-45 days?",
+        question: "Have you ever traveled internationally in the last 28-45 days?",
         correct: "Yes",
         options: [
             "Yes",
@@ -31,7 +31,7 @@ const qBank = [{
     },
     {
         id: 3,
-        question: "Have you encountered any of this ?   (Interacted with corona positive patient/Moved without protective gear)",
+        question: "Have you encountered any of these?   (Interacted with a corona positive patient / Moved without protective gear)",
         correct: "Yes",
         options: [
             "Yes",

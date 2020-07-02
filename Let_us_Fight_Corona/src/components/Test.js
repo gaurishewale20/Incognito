@@ -58,8 +58,8 @@ class Test extends Component
                         { this.state.responses === 4 ? ( <h3>Results</h3> ) : ( <h3>Test</h3> ) }
                     </div>
                     <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Hello viewer!</strong> This is a very basic test and we urge you to seek medical help immediately if you are unwell.
-                        Please answer the following questions honestly to get truthful result.
+                        <strong>Hello viewer!</strong> This is a very basic test and we urge you to seek medical help immediately if you feel unwell.
+                        Please answer the following questions honestly to get the best results!
                                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
