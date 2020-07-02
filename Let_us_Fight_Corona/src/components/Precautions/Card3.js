@@ -66,10 +66,10 @@ const Card3 = () =>
                             <h5 className='responsive'>For more info:</h5><br />
                             <h6 className='responsive'>
                                 <ul className="diet">Detailed Videos:
-                <li><a href="https://www.youtube.com/watch?time_continue=129&v=9Tv2BVN_WTk&feature=emb_logo">WHO(World
-                    Health Organization)_1</a></li>
-                                    <li><a href="https://www.youtube.com/watch?time_continue=8&v=adB8RW4I3o4&feature=emb_logo">Who(World
-                    Health Organization)_2</a></li>
+                <li><a href="https://www.youtube.com/watch?time_continue=129&v=9Tv2BVN_WTk&feature=emb_logo">WHO (World
+                    Health Organization) - 1</a></li>
+                                    <li><a href="https://www.youtube.com/watch?time_continue=8&v=adB8RW4I3o4&feature=emb_logo">WHO (World
+                    Health Organization) - 2</a></li>
                                 </ul>
                             </h6>
 

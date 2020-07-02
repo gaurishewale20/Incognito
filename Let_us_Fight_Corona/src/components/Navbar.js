@@ -11,7 +11,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';//home page
-import InfoIcon from '@material-ui/icons/Info';//about us
+//import InfoIcon from '@material-ui/icons/Info';//about us
 import DashboardIcon from '@material-ui/icons/Dashboard';//graphs
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import HelpIcon from '@material-ui/icons/Help';
@@ -50,7 +50,7 @@ const useStyles = makeStyles( ( theme ) => ( {
         //backgroundImage: 'linear-gradient(100deg, #233B57 60%, #ffffff 100%)',
 
         //  background: "linear-gradient(to right, rgb(130, 32, 143), rgb(170, 109, 179),rgb(247, 169, 250))"
-        background: "linear-gradient(to right, #398ea8 50% ,#7cbef8)",
+        background: "linear-gradient(to right, #004d4d 50% , #00a3a3)",
 
         // ab3 backgroundColor: '#333630',
         // ab3 backgroundImage: 'linear-gradient(90deg, #333630 30%, #ffffff 100%)',
@@ -97,7 +97,10 @@ const useStyles = makeStyles( ( theme ) => ( {
         //backgroundImage: 'linear-gradient(180deg, #FFFFFF 10%, #FFdde1 100%)',
         width: drawerWidth,
         //background: "linear-gradient(rgb(255, 255, 255), rgb(135, 135, 236))",
-        background: "linear-gradient(#fff,#7cbef8)",
+        // gauri's og background: "linear-gradient(#fff,#7cbef8)",
+         background: "linear-gradient(#111,#003b46)",
+        //background: "linear-gradient(#fff, #5bc8ac)",
+
 
     },
     content: {
@@ -122,59 +125,65 @@ function ResponsiveDrawer ( props )
         setMobileOpen( !mobileOpen );
     };
 
+    const text = {
+        color: "#fff",
+        fontSize: 17 
+    };
+    
+
     const drawer = (
         <div>
             <div className={ classes.toolbar } />
 
             <List>
                 <ListItem button key="Home" >
-                    <Link to="/home"><ListItemIcon>{ <HomeIcon /> }</ListItemIcon></Link>
+                    <Link to="/home"><ListItemIcon>{ <HomeIcon style={{ color: "white", fontSize: 25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./home' >
-                        <ListItemText primary="Home" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text  }} primary="Home" /></NavLink>
                 </ListItem>
                 <ListItem button key="Dashboard">
-                    <Link to="/dashboard"><ListItemIcon>{ <DashboardIcon /> }</ListItemIcon></Link>
+                    <Link to="/dashboard"><ListItemIcon> { <DashboardIcon style={{ color: "white", fontSize:  25 }}/> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./dashboard' >
-                        <ListItemText primary="Dashboard" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Dashboard" /></NavLink>
                 </ListItem>
                 <ListItem button key="Symptoms">
-                    <Link to="/symptoms"><ListItemIcon>{ <WbSunnyOutlinedIcon /> }</ListItemIcon></Link>
+                    <Link to="/symptoms"><ListItemIcon>{ <WbSunnyOutlinedIcon style={{ color: "white", fontSize:  25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./symptoms' >
-                        <ListItemText primary="Symptoms" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Symptoms" /></NavLink>
                 </ListItem>
                 <ListItem button key="Precautions">
-                    <Link to="/precautions"><ListItemIcon>{ <SecurityOutlinedIcon /> }</ListItemIcon></Link>
+                    <Link to="/precautions"><ListItemIcon>{ <SecurityOutlinedIcon style={{ color: "white", fontSize:  25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./Precautions' >
-                        <ListItemText primary="Precautions" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Precautions" /></NavLink>
                 </ListItem>
                 <ListItem button key="Test">
 
-                    <Link to="/test"><ListItemIcon>{ < AssessmentIcon /> }</ListItemIcon></Link>
+                    <Link to="/test"><ListItemIcon>{ < AssessmentIcon style={{ color: "white", fontSize:  25 }}/> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./test' >
-                        <ListItemText primary="Test" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Test" /></NavLink>
                 </ListItem>
                 <ListItem button key="FAQs">
-                    <Link to="/faqs"><ListItemIcon>{ <QuestionAnswerIcon /> }</ListItemIcon></Link>
+                    <Link to="/faqs"><ListItemIcon>{ <QuestionAnswerIcon style={{ color: "white", fontSize:  25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./faqs' >
-                        <ListItemText primary="FAQs and Process" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="FAQs and Process" /></NavLink>
                 </ListItem>
                 <ListItem button key="Helpline">
-                    <Link to="/help"> <ListItemIcon>{ <HelpIcon /> }</ListItemIcon></Link>
+                    <Link to="/help"> <ListItemIcon>{ <HelpIcon style={{ color: "white", fontSize:  25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./help' >
-                        <ListItemText primary="Helpline" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Helpline" /></NavLink>
                 </ListItem>
 
                 <ListItem button key="Essentials">
-                    <Link to="/essentials"> <ListItemIcon>{ <AddShoppingCartIcon /> }</ListItemIcon></Link>
+                    <Link to="/essentials"> <ListItemIcon>{ <AddShoppingCartIcon style={{ color: "white", fontSize:  25 }} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='./essentials' >
-                        <ListItemText primary="Essentials" /></NavLink>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="Essentials" /></NavLink>
                 </ListItem>
 
-                <ListItem button key="AboutUs">
-                    <Link to="/aboutus"><ListItemIcon>{ <InfoIcon /> }</ListItemIcon></Link>
+              {/*<ListItem button key="AboutUs">
+                    <Link to="/aboutus"><ListItemIcon>{ <InfoIcon style={{ color: "white"}} /> }</ListItemIcon></Link>
                     <NavLink className="nav-link" to='/aboutus' >
-                        <ListItemText primary="About us" /></NavLink>
-                </ListItem>
+                        <ListItemText primaryTypographyProps={{ style: text }} primary="About us" /></NavLink>
+    </ListItem> */  }
 
             </List>
         </div>
@@ -197,7 +206,7 @@ function ResponsiveDrawer ( props )
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6">
+                    <Typography variant="h5">
                         Let's Fight Corona
           </Typography>
                 </Toolbar>

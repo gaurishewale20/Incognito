@@ -34,7 +34,7 @@ class Home extends Component
                 { src: `${ Mask1 }`, title: "Essential commodities", content: "Can't find essential items?... Get links to online suppliers of masks and sanitizer with just a click!", link: "./essentials" },
                 { src: `${ Prevention }`, title: "Preventive Measures", content: "Follow these 5 rules of prevention for good health!", link: "./precautions" },
 
-                { src: `${ Csymptoms }`, title: "Symptoms of Covid-19", content: "Take a quick look and get to know if you are suffering from this or not", link: "./symptoms" },
+                { src: `${ Csymptoms }`, title: "Symptoms of Covid-19", content: "Take a quick look and get to know if you show any symptoms!", link: "./symptoms" },
                 { src: `${ testg }`, title: "Health Test", content: "Feeling queasy? Click to take a quick health test!", link: "./test" },
                 { src: `${ help }`, title: "Helpline", content: "Facing any problems? Need any sort of help? Click to get helpline numbers!", link: "./help" },
             ];

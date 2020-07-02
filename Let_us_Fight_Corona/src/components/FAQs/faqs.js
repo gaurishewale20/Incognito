@@ -33,16 +33,16 @@ const FAQs = () =>
                     <br /><hr />
                     <div id="section2">
                         <h4 className="sectiontitle" >CORONA VIRUS</h4>
-                        <AccordionFAQ title="What is Corona Virus ? "
+                        <AccordionFAQ title="What is Corona Virus? "
                             content="Corona viruses are a large family of viruses which may cause illness in animals or humans.  
                     In humans, several coronaviruses are known to cause respiratory infections. They range from common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe
                       Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus
-                       disease COVID-19"/>
+                       disease COVID-19."/>
                     </div>
                     <br /><hr />
                     <div id="section3" >
                         <h4 className="sectiontitle">COVID-19</h4>
-                        <AccordionFAQ title="What is COVID-19 ?"
+                        <AccordionFAQ title="What is COVID-19?"
                             content="COVID-19 is an infectious disease caused by the most recently discovered coron
                     a virus. This new virus and disease were unknown befo
                     re the outbreak began in Wuhan, China, in December 2019."/>
@@ -101,7 +101,7 @@ const FAQs = () =>
                                 disease. Why? You have a higher chance of catching COVID-19 in one of these areas.</li>
                         </ul>"/>
                         <br />
-                        <AccordionFAQ title="What are protection measures for people who have recently visited (past 14 days) areas where COVID-19 is spreading ?"
+                        <AccordionFAQ title="What are protection measures for people who have recently visited (past 14 days) areas where COVID-19 is spreading?"
                             content="<ul>
                     <li> Follow the guidance outlined above (Protection measures for everyone) </li>
                     <li> Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C° or above) and slight runny nose, until you recover. If you have someone who
@@ -113,7 +113,7 @@ const FAQs = () =>
                     </div><br /><hr />
                     <div id="section7" >
                         <h4 className="sectiontitle">MEDICINE</h4>
-                        <AccordionFAQ title="Are there any medicines or therapies that can prevent or cure COVID-19 ?"
+                        <AccordionFAQ title="Are there any medicines or therapies that can prevent or cure COVID-19?"
                             content="While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. We do  not recommend self-medication with
                     any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. We will continue to provide updated information
                     as soon as clinical findings are available."/>
