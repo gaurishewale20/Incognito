@@ -58,13 +58,12 @@ body {
 
 .footer {
     /*background-color: #ccffcc; */
-    top: 100%;
     margin-bottom: -50px;
     margin-right: -1.51rem;
     margin-left: -1.5rem;
     padding: 20px;
     border: none;
-    background-color: #4b5153;
+    background-color: #222c30;
     color: #e4e4e7;
     /*background: linear-gradient(60deg, #414b4e 0%, #d3d8da 100%);*/
 }
