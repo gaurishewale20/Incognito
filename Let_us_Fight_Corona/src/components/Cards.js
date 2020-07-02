@@ -20,9 +20,9 @@ function Cards ( { title, src, classes, content, link } )
                     <div className="container-fluid">
                         <img src={ src } alt={ title } className="card-img-top" />
                     </div>
-                    <div className="card-body text-dark">
+                    <div className="card-body text-body">
                         <h4 className="card-title">{ title }</h4>
-                        <p className="card-text text-success">{ content }</p>
+                        <p className="card-text text-dark">{ content }</p>
                     </div>
                 </div>
             </Link>
