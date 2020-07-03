@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Home from './HomeComponent';
+//import Home from './HomeComponent';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
@@ -26,6 +26,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/core/styles";
 import Footer from './FooterComponent';
 import ScrollToTop from './ScrollTotop';
+import AutoScroll from './AutoScroll';
 
 const drawerWidth = 240;
 
@@ -274,7 +275,7 @@ class ResponsiveDrawer extends React.Component
                 <main className={ classes.content }>
                     <div className={ classes.toolbar } />
                     <Typography component={ 'span' } varient={ 'body2' }>
-                        <Home />
+                        <AutoScroll />
                         <ScrollToTop /><br />
                         <Footer />
                     </Typography>

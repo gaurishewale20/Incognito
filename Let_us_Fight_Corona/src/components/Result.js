@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 function Result ( { score, Retake } )
 {
     var message;
@@ -18,6 +18,10 @@ function Result ( { score, Retake } )
     {
         message = "You are at high risk. Take care and stay at home. Consult doctor immediately.";
     }
+    useEffect( () =>
+    {
+        window.scrollTo( 0, 0 );
+    }, [] );
     return (
         <div className="score-board  p-5">
             <div className="score-card row align-items-center p-5">
