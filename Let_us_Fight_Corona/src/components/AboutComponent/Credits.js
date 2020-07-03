@@ -13,7 +13,7 @@ function Credits ()
                     <h4>Special Thanks to -
                         <br />
                         <ul type="none">
-                            <li>Community of Coders(COC) VJTI,Mumbai</li>
+                            <li>Community of Coders (COC) VJTI, Mumbai.</li>
                         </ul></h4>
                 </div>
             </div>
