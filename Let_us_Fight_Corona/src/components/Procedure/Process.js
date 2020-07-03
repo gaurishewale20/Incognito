@@ -45,7 +45,7 @@ function getStepContent ( step )
             return `If you do turn COVID-19 +ve in test report, inform the local PHC (Primary Health Centre)/Medical Officer of your area.
        Your must quarantine in Government Quarantine Centres or Private Hospital followed by 14 days home quarantine`;
         case 4:
-            return `The family members should avoid contact with the COVID-19 patient and shift him/her promtly to hospital.If the family members are asymtomatic(i.e show NO signs of Corona disease), there is no need of Corona testing for them.`;
+            return `The family members should avoid contact with the COVID-19 patient and shift him/her promtly to hospital.If the family members are asymptomatic(i.e show NO signs of Corona disease), there is no need of Corona testing for them.`;
         case 5:
             return `You will get more help from the Community Clinics- Freely available in your area and from the helpline numbers provided from our website.`
         default:
@@ -89,7 +89,7 @@ export default function Process ()
                         <Step key={ label }>
                             <StepLabel><h5>{ label }</h5></StepLabel>
                             <StepContent>
-                                <Typography><h6>{ getStepContent( index ) }</h6></Typography>
+                                <Typography variant="h6">{ getStepContent( index ) }</Typography>
                                 <div className={ classes.actionsContainer }>
                                     <div>
                                         <Button
@@ -117,7 +117,7 @@ export default function Process ()
                     <Paper square elevation={ 0 } className={ classes.resetContainer }>
                         <Typography><h5>All steps completed - We hope that you found this information helpful.</h5></Typography>
                         <Button onClick={ handleReset } className={ classes.button }>
-                            <h6> Read Again</h6>
+                            Read Again
                         </Button>
                     </Paper>
                 ) }

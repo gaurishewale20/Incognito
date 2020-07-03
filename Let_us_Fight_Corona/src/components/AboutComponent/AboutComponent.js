@@ -1,9 +1,9 @@
 import React from 'react';
 import MailIcon from '@material-ui/icons/Mail';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 function About () 
 {
-    
+
     return (
         <div className="container-fluid">
 
@@ -40,9 +40,9 @@ function About ()
 
                     <h4>CONTACT US</h4>
                     <hr />
-                   {/* <h5> <MailIcon /> teamincognito04@gmail.com</h5> */}
-                   {/* <a href="mailto:teamincognito04@gmail.com?Subject=Hello%20world!">Michael</a> */}
-                   <h5> <MailIcon /><a href={`mailto:teamincognito04@gmail.com?Subject=Message%20for%20the%20team`} style={{color: '#A21675'}}> Email Us</a></h5>
+                    {/* <h5> <MailIcon /> teamincognito04@gmail.com</h5> */ }
+                    {/* <a href="mailto:teamincognito04@gmail.com?Subject=Hello%20world!">Michael</a> */ }
+                    <h5> <MailIcon /><a href={ `mailto:teamincognito04@gmail.com?Subject=Message%20for%20the%20team` } style={ { color: '#A21675' } }> Email Us</a></h5>
 
 
 
