@@ -23,7 +23,7 @@ import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import SecurityOutlinedIcon from '@material-ui/icons/SecurityOutlined';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme  } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Footer from './FooterComponent';
 import ScrollToTop from './ScrollTotop';
 
