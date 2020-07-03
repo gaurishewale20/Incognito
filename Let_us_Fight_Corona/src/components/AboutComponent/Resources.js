@@ -12,8 +12,8 @@ function Resources ()
 
                         <p >
                             The Daily Data displayed on this website is used from this
-                    <a href="https://api.covid19india.org/"> API .</a>
-                    (A volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India)
+                    <a href="https://api.covid19india.org/"> API . </a>
+                    ( A volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India )
                     </p>
                             Information regarding the Symptoms, Preventions , etc is collected from :
                             <ul>
