@@ -51,7 +51,8 @@ const NationChart = ({ subset: { confirmed, recovered, active, deaths } }) => {
                     labels: ['Confirmed', 'Recovered', 'Active', 'Deaths'],
                     datasets: [{
                         label: 'Numbers',
-                        backgroundColor: ["rgba(155, 49, 146, 0.6)", 'rgba(234, 95, 137, 0.6)', 'rgba(247, 183, 163, 1)', 'rgba(255, 241, 201, 1)'],
+                        //backgroundColor: ["rgba(155, 49, 146, 0.6)", 'rgba(234, 95, 137, 0.6)', 'rgba(247, 183, 163, 1)', 'rgba(255, 241, 201, 1)'],
+                        backgroundColor:["rgba(55, 94, 151, 0.6)", "rgba(251, 101, 66, 0.6)", "rgba(255, 187, 0, 0.6)", "rgba(179, 193, 0, 0.6)"],
                         data: [confirmed, recovered, active, deaths],
                         borderWidth: 1,
                         borderColor: '#777',
