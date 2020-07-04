@@ -23,14 +23,14 @@ import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import SecurityOutlinedIcon from '@material-ui/icons/SecurityOutlined';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Footer from './FooterComponent';
 import ScrollToTop from './ScrollTotop';
 import AutoScroll from './AutoScroll';
 
 const drawerWidth = 240;
 
-const styles = theme => ( {
+const useStyles = makeStyles( ( theme ) => ( {
     root: {
         display: 'flex',
         /* 1 backgroundColor: 'silver'*/
@@ -110,188 +110,159 @@ const styles = theme => ( {
         flexGrow: 1,
         padding: theme.spacing( 3 ),
     },
-} );
+} ) );
 
 
 
-
-class ResponsiveDrawer extends React.Component
+function ResponsiveDrawer ( props )
 {
-    constructor ()
-    {
-        super();
-        this.state = {
-            mobileOpen: false,
-            Windowwidth: 0
+    const { window } = props;
+    const classes = useStyles();
+    const theme = useTheme();
+    const [ mobileOpen, setMobileOpen ] = React.useState( false );
 
-        };
-        window.addEventListener( "resize", this.update );
-    }
-
-    componentDidMount ()
+    const handleDrawerToggle = () =>
     {
-        this.update();
-    }
-
-    update = () =>
-    {
-        this.setState( {
-            windowwidth: window.innerWidth
-        } );
+        setMobileOpen( !mobileOpen );
     };
 
-    handleDrawerToggle = () =>
-    {
-        this.setState( state => ( { mobileOpen: !state.mobileOpen } ) );
+    const text = {
+        color: "#fff",
+        fontSize: 17
     };
 
-    render ()
-    {
-
-        const { classes, theme } = this.props;
-        const text = {
-            color: "#fff",
-            fontSize: 17
-        };
-        // console.log( `${ this.state.windowwidth }` );
-
-        const drawer = (
-            <div>
-                <div className={ classes.toolbar } />
-
-                <List onClick={ () =>
-                {
-                    if ( `${ this.state.windowwidth }` < 600 )
-                        this.handleDrawerToggle();
-                }
-
-                }>
-                    <ListItem button key="Home" >
-                        <Link to="/home"><ListItemIcon>{ <HomeIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./home' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Home" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="Dashboard">
-                        <Link to="/dashboard"><ListItemIcon> { <DashboardIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./dashboard' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Dashboard" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="Symptoms">
-                        <Link to="/symptoms"><ListItemIcon>{ <WbSunnyOutlinedIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./symptoms' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Symptoms" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="Precautions">
-                        <Link to="/precautions"><ListItemIcon>{ <SecurityOutlinedIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./Precautions' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Precautions" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="Test">
-
-                        <Link to="/test"><ListItemIcon>{ < AssessmentIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./test' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Test" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="FAQs">
-                        <Link to="/faqs"><ListItemIcon>{ <QuestionAnswerIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./faqs' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="FAQs and Process" /></NavLink>
-                    </ListItem>
-                    <ListItem button key="Helpline">
-                        <Link to="/help"> <ListItemIcon>{ <HelpIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./help' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Helpline" /></NavLink>
-                    </ListItem>
-
-                    <ListItem button key="Essentials">
-                        <Link to="/essentials"> <ListItemIcon>{ <AddShoppingCartIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
-                        <NavLink className="nav-link" to='./essentials' >
-                            <ListItemText primaryTypographyProps={ { style: text } } primary="Essentials" /></NavLink>
-                    </ListItem>
-
-                    {/*<ListItem button key="AboutUs">
-                    <Link to="/aboutus"><ListItemIcon>{ <InfoIcon style={{ color: "white"}} /> }</ListItemIcon></Link>
-                    <NavLink className="nav-link" to='/aboutus' >
-                        <ListItemText primaryTypographyProps={{ style: text }} primary="About us" /></NavLink>
-    </ListItem> */  }
-
-                </List>
-            </div>
-        );
 
 
-        return (
-            <div className={ classes.root }>
-                <CssBaseline />
-                <AppBar position="fixed" className={ classes.appBar }>
+    const drawer = (
+        <div>
+            <div className={ classes.toolbar } />
 
-                    <Toolbar>
-                        <IconButton
-                            color="inherit"
-                            aria-label="open drawer"
-                            edge="start"
-                            onClick={ this.handleDrawerToggle }
-                            className={ classes.menuButton }
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Typography variant="h5">
-                            Let's Fight Corona
+            <List>
+                <ListItem button key="Home" >
+                    <Link to="/home"><ListItemIcon>{ <HomeIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./home' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Home" /></NavLink>
+                </ListItem>
+                <ListItem button key="Dashboard">
+                    <Link to="/dashboard"><ListItemIcon> { <DashboardIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./dashboard' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Dashboard" /></NavLink>
+                </ListItem>
+                <ListItem button key="Symptoms">
+                    <Link to="/symptoms"><ListItemIcon>{ <WbSunnyOutlinedIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./symptoms' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Symptoms" /></NavLink>
+                </ListItem>
+                <ListItem button key="Precautions">
+                    <Link to="/precautions"><ListItemIcon>{ <SecurityOutlinedIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./Precautions' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Precautions" /></NavLink>
+                </ListItem>
+                <ListItem button key="Test">
+
+                    <Link to="/test"><ListItemIcon>{ < AssessmentIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./test' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Test" /></NavLink>
+                </ListItem>
+                <ListItem button key="FAQs">
+                    <Link to="/faqs"><ListItemIcon>{ <QuestionAnswerIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./faqs' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="FAQs and Process" /></NavLink>
+                </ListItem>
+                <ListItem button key="Helpline">
+                    <Link to="/help"> <ListItemIcon>{ <HelpIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./help' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Helpline" /></NavLink>
+                </ListItem>
+
+                <ListItem button key="Essentials">
+                    <Link to="/essentials"> <ListItemIcon>{ <AddShoppingCartIcon style={ { color: "white", fontSize: 25 } } /> }</ListItemIcon></Link>
+                    <NavLink className="nav-link" to='./essentials' >
+                        <ListItemText primaryTypographyProps={ { style: text } } primary="Essentials" /></NavLink>
+                </ListItem>
+
+
+
+            </List>
+        </div>
+    );
+
+    const container = window !== undefined ? () => window().document.body : undefined;
+
+    return (
+        <div className={ classes.root }>
+            <CssBaseline />
+            <AppBar position="fixed" className={ classes.appBar }>
+
+                <Toolbar>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={ handleDrawerToggle }
+                        className={ classes.menuButton }
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant="h5">
+                        Let's Fight Corona
           </Typography>
-                    </Toolbar>
-                </AppBar>
-                <nav className={ classes.drawer } aria-label="mailbox folders">
-                    {/* The implementation can be swapped with js to avoid SEO duplication of links. */ }
+                </Toolbar>
+            </AppBar>
+            <nav className={ classes.drawer } aria-label="mailbox folders">
+                {/* The implementation can be swapped with js to avoid SEO duplication of links. */ }
 
-                    <Hidden smUp implementation="css">
-                        <Drawer
-                            container={ this.props.container }
+                <Hidden smUp implementation="css">
+                    <Drawer
+                        container={ container }
 
-                            variant="temporary"
-                            anchor={ theme.direction === 'rtl' ? 'right' : 'left' }
-                            open={ this.state.mobileOpen }
-                            onClose={ this.handleDrawerToggle }
-                            classes={ {
-                                paper: classes.drawerPaper,
-                            } }
+                        variant="temporary"
+                        anchor={ theme.direction === 'rtl' ? 'right' : 'left' }
+                        open={ mobileOpen }
+                        onClick={ handleDrawerToggle }
+                        classes={ {
+                            paper: classes.drawerPaper,
+                        } }
+                        ModalProps={ {
+                            keepMounted: true, // Better open performance on mobile.
+                        } }
+                    >
+                        { drawer }
+                    </Drawer>
+                </Hidden>
+                <Hidden xsDown implementation="css">
+                    <Drawer
+                        classes={ {
+                            paper: classes.drawerPaper,
 
-                        >
-                            { drawer }
-                        </Drawer>
-                    </Hidden>
-                    <Hidden xsDown implementation="css">
-                        <Drawer
-                            classes={ {
-                                paper: classes.drawerPaper,
-
-                            } }
-                            variant="permanent"
-                            open
-                        >
-                            { drawer }
-                        </Drawer>
-                    </Hidden>
-                </nav>
-                <main className={ classes.content }>
-                    <div className={ classes.toolbar } />
-                    <Typography component={ 'span' } varient={ 'body2' }>
-                        <AutoScroll />
-                        <ScrollToTop /><br />
-                        <Footer />
-                    </Typography>
-                </main>
+                        } }
+                        variant="permanent"
+                        open
+                    >
+                        { drawer }
+                    </Drawer>
+                </Hidden>
+            </nav>
+            <main className={ classes.content }>
+                <div className={ classes.toolbar } />
+                <Typography component={ 'span' } varient={ 'body2' }>
+                    <AutoScroll />
+                    <ScrollToTop /><br />
+                    <Footer />
+                </Typography>
+            </main>
 
 
-            </div>
-        );
-    }
+        </div>
+    );
 }
 
 ResponsiveDrawer.propTypes = {
-    classes: PropTypes.object.isRequired,
-    // Injected by the documentation to work in an iframe.
-    // You won't need it on your project.
-    container: PropTypes.object,
-    theme: PropTypes.object.isRequired
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
+    window: PropTypes.func,
 };
-export default withStyles( styles, { withTheme: true } )( ResponsiveDrawer );
+
+export default ResponsiveDrawer;

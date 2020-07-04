@@ -16,12 +16,16 @@ class App extends Component
 
   componentDidMount = () =>
   {
-    setTimeout( () =>
+    this.interval = setTimeout( () =>
     {
       this.setState( {
         loading: false,
       } )
     }, 4500 )
+  }
+  componentWillUnmount ()
+  {
+    clearTimeout( this.interval );
   }
   render ()
   {
