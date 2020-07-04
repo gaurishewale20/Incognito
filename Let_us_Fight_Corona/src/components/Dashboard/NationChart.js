@@ -8,25 +8,26 @@ const NationChart = ({ subset: { confirmed, recovered, active, deaths } }) => {
 
 
     const barChart = (
-        confirmed ? (
-            <Bar
-                data={{
+        confirmed ? (<
+            Bar data={
+                {
                     labels: ['Confirmed', 'Recovered', 'Active', 'Deaths'],
-                    datasets: [
-                        {
-                            label: 'Numbers',
-                            backgroundColor: ['rgba(30, 31, 38, 0.8)', 'rgba(40, 54, 85, 0.8)', 'rgba(77, 100, 141, 0.8)', 'rgba(208, 150, 131, 0.8)'],
-                            data: [confirmed, recovered, active, deaths],
-                            borderWidth: 1,
-                            borderColor: '#777',
-                            hoverBorderWidth: 2,
-                            hoverBorderColor: '#333',
-                        },
+                    datasets: [{
+                        label: 'Numbers',
+                        backgroundColor: ['rgba(30, 31, 38, 0.8)', 'rgba(40, 54, 85, 0.8)', 'rgba(77, 100, 141, 0.8)', 'rgba(208, 150, 131, 0.8)'],
+                        data: [confirmed, recovered, active, deaths],
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: 2,
+                        hoverBorderColor: '#333',
+                    },
 
                     ],
 
-                }}
-                options={{
+                }
+            }
+            options={
+                {
                     responsive: true,
                     //maintainAspectRatio: false,
                     legend: { display: false, align: 'center', labels: { fontColor: '#000' } },
@@ -37,31 +38,33 @@ const NationChart = ({ subset: { confirmed, recovered, active, deaths } }) => {
                         cornerRadius: 9
 
                     }
-                }}
-            />
+                }
+            }
+        />
         ) : null
     );
 
     const pieChart = (
-        confirmed ? (
-            <Pie
-                data={{
+        confirmed ? (<
+            Pie data={
+                {
                     labels: ['Confirmed', 'Recovered', 'Active', 'Deaths'],
-                    datasets: [
-                        {
-                            label: 'Numbers',
-                            backgroundColor: ["rgba(219, 127, 127, 0.6)", 'rgba(221, 159, 159, 0.6)', 'rgba(238, 210, 210, 0.6)', 'rgba(244, 235, 219, 0.6)'],
-                            data: [confirmed, recovered, active, deaths],
-                            borderWidth: 1,
-                            borderColor: '#777',
-                            hoverBorderWidth: 2,
-                            hoverBorderColor: ["rgba(0, 0, 0, 0.8)", 'rgba(0, 0, 0, 0.8)', 'rgba(0, 0, 0, 0.8)', 'rgba(0, 0, 0, 0.8)'],
-                        },
+                    datasets: [{
+                        label: 'Numbers',
+                        backgroundColor: ["rgba(155, 49, 146, 0.6)", 'rgba(234, 95, 137, 0.6)', 'rgba(247, 183, 163, 1)', 'rgba(255, 241, 201, 1)'],
+                        data: [confirmed, recovered, active, deaths],
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: 2,
+                        hoverBorderColor: ["rgba(0, 0, 0, 0.8)", 'rgba(0, 0, 0, 0.8)', 'rgba(0, 0, 0, 0.8)', 'rgba(0, 0, 0, 0.8)'],
+                    },
 
                     ],
 
-                }}
-                options={{
+                }
+            }
+            options={
+                {
                     responsive: true,
                     //maintainAspectRatio: false,
                     legend: { display: true, align: 'center', labels: { fontColor: '#000' } },
@@ -72,8 +75,9 @@ const NationChart = ({ subset: { confirmed, recovered, active, deaths } }) => {
                         cornerRadius: 9
 
                     }
-                }}
-            />
+                }
+            }
+        />
         ) : null
     );
 
@@ -81,15 +85,11 @@ const NationChart = ({ subset: { confirmed, recovered, active, deaths } }) => {
 
 
 
-    return (
-        <div className={styles.App}>
-            <div className={styles.bar_chart}>
-                {barChart}
-            </div>
-            <div className={styles.pie_chart}>{pieChart}</div>
+    return (<div className={styles.App} >
+        <div className={styles.bar_chart} > {barChart} </div> <div className={styles.pie_chart} > {pieChart} </div>
 
         </div>
     );
 };
 
-export default NationChart; 
+export default NationChart;
