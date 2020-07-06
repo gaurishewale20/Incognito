@@ -100,7 +100,35 @@ Package used: "axios"
                      )
                      }
 
+* Creating a Counter on Cards using Count-Up Package
 
+                    const Cards = ( { subset: { active, confirmed, deaths, recovered } } ) =>
+                    {
+
+                    ...
+
+                    return (
+                        <div className={ styles.container } >
+                            <Grid container spacing={ 2 } justify="center">
+                                <Grid item component={ Card } xs={ 12 } md={ 4 } className={ cx( styles.card, styles.confirmed ) }>
+                                    <CardContent>
+                                        <Typography color="textSecondary" gutterBottom>Confirmed</Typography>
+                                        <Typography variant='h5'>
+                                            <CountUp start={ 0 } end={ confirmed } duration={ 2.0 } separator="," />
+                                        </Typography>
+
+                                        <Typography variant="body2">Number of confirmed cases of COVID-19</Typography>
+                                    </CardContent>
+                                </Grid>
+
+                                ...
+                                ...
+
+                                );
+                            }
+
+                    export default Cards;
+               
 
 * GitHub repo link: [Link to repository](https://github.com/gaurishewale20/Incognito.git)
 * Drive link: [Drive link here](https://drive.google.com/drive/folders/1tndG-mTJ-Wiz9-YKRqSSerLfJT3y3AZi?usp=sharing)
