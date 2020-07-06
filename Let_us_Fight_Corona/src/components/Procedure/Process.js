@@ -27,7 +27,7 @@ const useStyles = makeStyles( ( theme ) => ( {
 
 function getSteps ()
 {
-    return [ 'When to suspect the possibility of Corona ?', 'What to do then ?', 'What document is required for Corona-testing?', 'What to do if I turn out to be COVID-19 +ve patient? ',
+    return [ 'When to suspect the possibility of Corona?', 'What to do then?', 'What document is required for Corona-testing?', 'What to do if I turn out to be COVID-19 +ve patient? ',
         'What about family members of the patient?', 'Where will I get more Help ?' ];
 }
 
@@ -38,16 +38,16 @@ function getStepContent ( step )
         case 0:
             return `If you are not responding to your family doctor treatment for more than 3 days - `;
         case 1:
-            return `Visit Municipal /Government Hospital and get yourself checked by the doctors present.`;
+            return `Visit Municipal / Government Hospital and get yourself checked by the doctors present.`;
         case 2:
-            return `Get the COVID-19 (RT-CPR) testing letter from the government doctor. After that , you can take the  test in government hospital or private labs. `;
+            return `Get the COVID-19 (RT-CPR) testing letter from the government doctor. After that, you can take the test in government hospital or private labs. `;
         case 3:
-            return `If you do turn COVID-19 +ve in test report, inform the local PHC (Primary Health Centre)/Medical Officer of your area.
-       Your must quarantine in Government Quarantine Centres or Private Hospital followed by 14 days home quarantine`;
+            return `If you do turn COVID-19 +ve in test report, inform the local PHC (Primary Health Centre) / Medical Officer of your area.
+       Your must quarantine in Government Quarantine Centres or Private Hospital followed by 14 days home quarantine.`;
         case 4:
-            return `The family members should avoid contact with the COVID-19 patient and shift him/her promtly to hospital.If the family members are asymptomatic(i.e show NO signs of Corona disease), there is no need of Corona testing for them.`;
+            return `The family members should avoid contact with the COVID-19 patient and shift him / her promptly to hospital. If the family members are asymptomatic (i.e show NO signs of Corona disease), there is no need of Corona testing for them.`;
         case 5:
-            return `You will get more help from the Community Clinics- Freely available in your area and from the helpline numbers provided from our website.`
+            return `You will get more help from the Community Clinics - Freely available in your area and from the helpline numbers provided from our website.`
         default:
             return 'Unknown step';
     }
