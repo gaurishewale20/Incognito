@@ -13,7 +13,7 @@
 * Archeel Parekh
 
 ## Description
-A real-time COVID-19 Dashboard equipped with all the information regarding Symptoms,Precautions,etc and a quick basic health test.
+A real-time COVID-19 Dashboard equipped with all the information regarding Symptoms,Precautions, etc and a quick basic health test.
 
 The website offers various features as follows:
 - Daily Data visualisation for Indian States, Union Territories and the country
@@ -21,7 +21,7 @@ The website offers various features as follows:
 - Precautions
 - Health Test
 - FAQs
-- Process(COVID-19 Management )
+- Process (COVID-19 Management )
 - Helpline (For Indian States, Union Territories and wards in Mumbai)
 - Essentials
 
@@ -117,12 +117,14 @@ Framework- React Js
 >You can download or simply clone this repository for setting up this project
 
 ## Applications
->As we all know, the COVID-19 pandemic is a global health crisis that has changed the world and this will go down as one of the historic moments of all time. We've been in lockdown for weeks now, and it's essential that we keep up with the latest news about this pandemic and keep ourselves and our loved ones safe.So, we've created a Real-Time Corona Virus Dashboard with essential information that might be useful to you.
+[comment]: < As we all know, the COVID-19 pandemic is a global health crisis that has changed the world and this will go down as one of the historic moments of all time. We've been in lockdown for weeks now, and it's essential that we keep up with the latest news about this pandemic and keep ourselves and our loved ones safe.So, we've created a Real-Time Corona Virus Dashboard with essential information that might be useful to you. >
 
->You can take a basic health test and go through all the symptoms,preventions listed on the site
+>Some of the applications of this dashboard - We can take a basic health test, read about symptoms and go through the faqs to get a better idea about COVID-19. The Preventions and Precautions are also very informative and helpful. The dashboard also provides real-time data of corona cases in India, to keep ourselves updated with the situation in all the states. The Covid-19 Process Management is also a great feature added that helps people know what to do in case they are infected with the corona virus.
+
+
 
 ## Future scope
->We plan to work more on Data visualizations and integrating Google Maps API for providing location based options for purchasing essentials..
+>We plan to work more on Data visualizations, add district level charts and integrate Google Maps API for providing location-based options for purchasing essential items. The site will also be updated regularly, when there is more scientifically proven information released about COVID-19. 
 
 ## Few glimpses of Website
 
