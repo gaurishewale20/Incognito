@@ -156,8 +156,12 @@ Framework- React Js
 
 ## Few glimpses of Website
 
-![Screenshot alt text](https://edtimes.in/wp-content/uploads/2018/09/NikeMeme10-640x633.jpg "Here is a screenshot")
 
+![image](https://drive.google.com/uc?export=view&id=1u9zwMMSdHnzuUoA_klK3jwuSr9nbs33k)
 
+![image](https://drive.google.com/uc?export=view&id=1twY0dKUFNvJiBlm-BV-xqXR_EZns5FE5)
 
+![image](https://drive.google.com/uc?export=view&id=1tuYnj-8WWF5JyXgzTX-3FphSAiklGiHY)
+
+![image](https://drive.google.com/uc?export=view&id=1tnlycr40drCU8N9cyef6mPAtV-oFS1kc)
 
