@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import NationChart from './NationChart';
-
+import  '../../api/index';
 
 class NC_APP extends React.Component
 {
@@ -15,7 +15,7 @@ class NC_APP extends React.Component
     async componentDidMount ()
     {
 
-        const { data } = await axios.get( 'https://api.covid19india.org/data.json' );
+        const { data } = await axios.get( 'https://data.covid19india.org/data.json' );
         const india_values = data.statewise[ 0 ];
         const subset = {
             confirmed: india_values.confirmed,

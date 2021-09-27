@@ -2,8 +2,8 @@ import React from 'react';
 function Resources () 
 {
     return (
-        <div className="container-fluid">
-            <div className=" Resources row row-content p-4"  >
+        <div className="container-fluid min-vh-100">
+            <div className=" Resources d-inline-block row row-content p-4"  >
                 <div className="resources_info">
                     <br />
                     <h4>RESOURCES</h4>
@@ -12,7 +12,7 @@ function Resources ()
 
                         <p >
                             The Daily Data displayed on this website is used from this
-                    <a href="https://api.covid19india.org/"> API . </a>
+                    <a href="https://data.covid19india.org/data.json"> API . </a>
                     ( A volunteer-driven, crowd-sourced database for COVID-19 stats & patient tracing in India )
                     </p>
                             Information regarding the Symptoms, Preventions , etc is collected from :

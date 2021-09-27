@@ -21,7 +21,7 @@ class App extends Component
       this.setState( {
         loading: false,
       } )
-    }, 4500 )
+    }, 1000 )
   }
   componentWillUnmount ()
   {

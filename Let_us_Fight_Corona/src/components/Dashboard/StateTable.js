@@ -22,7 +22,7 @@ class DashJS extends React.Component
     }
     fetchData ()
     {
-        fetch( "https://api.covid19india.org/data.json" )
+        fetch( "https://data.covid19india.org/data.json" )
             .then( response => response.json() )
             .then( parsedJSON => parsedJSON.statewise.map( stateinfo => (
                 {

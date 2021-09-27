@@ -2,9 +2,9 @@ import React from 'react';
 function Credits () 
 {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid min-vh-100">
 
-            <div className=" Credits d-inline-block p-4"  >
+            <div className=" Credits d-inline-block p-4 ">
                 <div className="credits_info">
                     <p />
                     <h4>CREDITS</h4>

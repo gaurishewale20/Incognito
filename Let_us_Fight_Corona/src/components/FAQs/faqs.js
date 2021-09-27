@@ -113,10 +113,32 @@ const FAQs = () =>
                     </div><br /><hr />
                     <div id="section7" >
                         <h4 className="sectiontitle">MEDICINE</h4>
-                        <AccordionFAQ title="Are there any medicines or therapies that can prevent or cure COVID-19?"
+                        <AccordionFAQ title="Are there any medicines or therapies or vaccines that can prevent or cure COVID-19?"
                             content="While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. We do  not recommend self-medication with
-                    any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. We will continue to provide updated information
-                    as soon as clinical findings are available."/>
+                    any medicines, including antibiotics, as a prevention or cure for COVID-19. Covid-19 Vaccinations in India, so far :
+                    <ul>
+                    <li>Covishield</li>
+                    <li>Sputnik</li>
+                    <li>Moderna</li>
+                    <li>Covaxin</li>
+                    </ul> 
+                    <p>Everyone 18 and older is eligible to get the vaccine against Covid-19. Availability may vary by state.</p>
+                    "/>
+                    </div>
+                    <br /><hr />
+                    <div id="section8" >
+                        <h4 className="sectiontitle">VACCINE</h4>
+                        <AccordionFAQ title="How do Covid Vaccines work?"
+                            content="COVID-19 mRNA vaccines contain nucleic acids, which are the building blocks of all our cells. The mRNA carries instructions inside a lipid coating or fat bubble that tells cells to produce harmless pieces of 'spike' protein found on SARS-CoV-2. Once the protein is created, your immune system identifies it as a foreign molecule. The immune process starts, making antibodies that can attach to the virus. These antibodies protect you from getting COVID-19. Although widespread use of mRNA vaccines is new, this technology has been studied for decades. mRNA vaccines do not contain any live or dead parts of the virus. Once they’ve done their job, the messenger RNA quickly exits the body. mRNA vaccines are given in a two-dose series."/>
+                    </div>
+                    <br /><hr />
+                    <div id="section9" >
+                        <h4 className="sectiontitle">VACCINE REGISTRATION</h4>
+                        <AccordionFAQ title="Where to register and get more info?"
+                            content="Visit the following site to get more info about 
+                            the Covid Vaccine!<br>
+                            Register soon, and get vaccinated at your nearest center!
+                            <a href='https://www.mygov.in/covid-19'>Click Here!</a>"/>
                     </div>
                 </div>
 
